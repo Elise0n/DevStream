@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DevStream | TV Digital & Streaming Premium 4K</title>
-  <meta name="description" content="DevStream - Más de 10,000 canales en vivo, películas, series y eventos deportivos en Ultra HD 4K sin cortes con tecnología Anti-Freeze.">
+  <title>DevStream TV Digital | Streaming Global Sin Fronteras 4K</title>
+  <meta name="description" content="DevStream TV Digital - Chau cables y contratos. Más de 1.000 canales en vivo, todo el fútbol sin cortes, series y estrenos de cine desde cualquier parte del mundo. Instalación en 5 minutos.">
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -22,32 +22,32 @@
       theme: {
         extend: {
           colors: {
-            brandDark: '#070913',
-            brandDarker: '#04050b',
-            brandCard: '#0f1326',
-            brandCardBorder: '#1c2242',
+            brandDark: '#060812',
+            brandDarker: '#030409',
+            brandCard: '#0d1124',
+            brandCardBorder: '#1c2448',
             brandCyan: '#00d2ff',
             brandPurple: '#9333ea',
             brandNeon: '#a855f7',
-            brandAccent: '#3b82f6'
+            brandAccent: '#38bdf8'
           },
           fontFamily: {
             sans: ['Inter', 'sans-serif'],
             display: ['Outfit', 'sans-serif'],
           },
           animation: {
-            'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'pulse-slow': 'pulse 3.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
             'float': 'float 5s ease-in-out infinite',
             'glow': 'glow 2.5s ease-in-out infinite alternate',
           },
           keyframes: {
             float: {
               '0%, 100%': { transform: 'translateY(0px)' },
-              '50%': { transform: 'translateY(-12px)' },
+              '50%': { transform: 'translateY(-10px)' },
             },
             glow: {
-              '0%': { filter: 'drop-shadow(0 0 15px rgba(0, 210, 255, 0.4)) drop-shadow(0 0 25px rgba(168, 85, 247, 0.3))' },
-              '100%': { filter: 'drop-shadow(0 0 25px rgba(0, 210, 255, 0.7)) drop-shadow(0 0 45px rgba(168, 85, 247, 0.6))' }
+              '0%': { filter: 'drop-shadow(0 0 15px rgba(0, 210, 255, 0.4))' },
+              '100%': { filter: 'drop-shadow(0 0 25px rgba(168, 85, 247, 0.6))' }
             }
           }
         }
@@ -57,15 +57,14 @@
 
   <style>
     body {
-      background-color: #070913;
+      background-color: #060812;
       color: #f1f5f9;
       font-family: 'Inter', sans-serif;
       overflow-x: hidden;
     }
 
-    /* Glassmorphism Classes */
     .glass-card {
-      background: rgba(15, 19, 38, 0.65);
+      background: rgba(13, 17, 36, 0.72);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
       border: 1px solid rgba(255, 255, 255, 0.08);
@@ -76,10 +75,10 @@
     }
     
     .glass-card-hover:hover {
-      background: rgba(22, 28, 56, 0.85);
-      border-color: rgba(0, 210, 255, 0.4);
+      background: rgba(20, 26, 54, 0.9);
+      border-color: rgba(0, 210, 255, 0.45);
       transform: translateY(-4px);
-      box-shadow: 0 12px 30px -10px rgba(0, 210, 255, 0.15);
+      box-shadow: 0 16px 35px -12px rgba(0, 210, 255, 0.2);
     }
 
     .neon-text-gradient {
@@ -88,62 +87,45 @@
       -webkit-text-fill-color: transparent;
     }
 
-    .neon-border {
-      position: relative;
-    }
-    .neon-border::after {
-      content: '';
-      position: absolute;
-      inset: -1px;
-      background: linear-gradient(90deg, #00d2ff, #a855f7, #00d2ff);
-      border-radius: inherit;
-      z-index: -1;
-      opacity: 0.7;
-      transition: opacity 0.3s ease;
-    }
-    .neon-border:hover::after {
-      opacity: 1;
-    }
-
-    /* Grid background effect */
     .bg-grid {
       background-size: 40px 40px;
       background-image: 
-        linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+        linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
     }
 
     /* Custom Scrollbar */
     ::-webkit-scrollbar {
-      width: 8px;
+      width: 7px;
     }
     ::-webkit-scrollbar-track {
-      background: #070913;
+      background: #060812;
     }
     ::-webkit-scrollbar-thumb {
       background: #1e293b;
       border-radius: 4px;
     }
     ::-webkit-scrollbar-thumb:hover {
-      background: #38bdf8;
+      background: #00d2ff;
     }
   </style>
 </head>
 <body class="bg-brandDark antialiased bg-grid relative selection:bg-brandCyan selection:text-brandDark">
 
-  <!-- Background radial glow lights -->
-  <div class="fixed top-0 left-1/4 w-96 h-96 bg-brandCyan/15 rounded-full blur-[130px] pointer-events-none -z-10"></div>
-  <div class="fixed top-1/3 right-10 w-[450px] h-[450px] bg-brandPurple/15 rounded-full blur-[150px] pointer-events-none -z-10"></div>
-  <div class="fixed bottom-10 left-1/3 w-[500px] h-[500px] bg-brandAccent/10 rounded-full blur-[160px] pointer-events-none -z-10"></div>
+  <!-- Background radial lights -->
+  <div class="fixed top-0 left-1/4 w-[420px] h-[420px] bg-brandCyan/10 rounded-full blur-[140px] pointer-events-none -z-10"></div>
+  <div class="fixed top-1/3 right-10 w-[460px] h-[460px] bg-brandPurple/15 rounded-full blur-[150px] pointer-events-none -z-10"></div>
+  <div class="fixed bottom-10 left-1/3 w-[500px] h-[500px] bg-sky-600/10 rounded-full blur-[170px] pointer-events-none -z-10"></div>
 
-  <header class="sticky top-0 z-50 backdrop-blur-md bg-brandDark/80 border-b border-white/5 transition-all">
+  <!-- Global Header -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-brandDark/85 border-b border-white/5 transition-all">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
         
-        <!-- Brand Logo (SVG Rocket match with DevStream prompt design) -->
+        <!-- DevStream Logo -->
         <a href="#" class="flex items-center gap-3 group">
-          <div class="relative w-11 h-11 flex items-center justify-center rounded-xl bg-gradient-to-tr from-brandPurple to-brandCyan p-[2px] transition transform group-hover:scale-105 shadow-lg shadow-cyan-500/20">
-            <div class="w-full h-full bg-[#0a0c18] rounded-[10px] flex items-center justify-center overflow-hidden">
+          <div class="relative w-11 h-11 flex items-center justify-center rounded-xl bg-gradient-to-tr from-brandPurple via-sky-500 to-brandCyan p-[2px] transition transform group-hover:scale-105 shadow-lg shadow-cyan-500/20">
+            <div class="w-full h-full bg-[#080b18] rounded-[10px] flex items-center justify-center overflow-hidden">
               <svg class="w-7 h-7 transform -rotate-12 transition-transform duration-300 group-hover:rotate-0" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="32" cy="32" r="28" stroke="url(#logo_grad)" stroke-width="2" stroke-dasharray="4 3" opacity="0.6"/>
                 <path d="M38 10C38 10 48 18 45 32C42 46 22 52 22 52C22 52 24 38 28 26C32 14 38 10 38 10Z" fill="url(#rocket_grad)" />
@@ -158,7 +140,7 @@
                   <linearGradient id="rocket_grad" x1="20" y1="10" x2="48" y2="52" gradientUnits="userSpaceOnUse">
                     <stop stop-color="#00d2ff"/>
                     <stop offset="0.5" stop-color="#a855f7"/>
-                    <stop offset="1" stop-color="#6366f1"/>
+                    <stop offset="1" stop-color="#38bdf8"/>
                   </linearGradient>
                 </defs>
               </svg>
@@ -168,44 +150,59 @@
             <span class="text-2xl font-black font-display tracking-tight text-white flex items-center">
               DEV<span class="text-brandCyan">STREAM</span>
             </span>
-            <span class="block text-[9px] uppercase tracking-[0.25em] text-gray-400 font-semibold -mt-1">Code. Stream. Connect.</span>
+            <span class="block text-[9px] uppercase tracking-[0.22em] text-gray-400 font-semibold -mt-1">TV Digital • Global & Sin Límites</span>
           </div>
         </a>
 
-        <!-- Desktop Navigation Links -->
-        <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-gray-300">
+        <!-- Desktop Nav -->
+        <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-gray-300">
           <a href="#beneficios" class="hover:text-brandCyan transition">Beneficios</a>
-          <a href="#canales" class="hover:text-brandCyan transition">Contenido</a>
+          <a href="#canales" class="hover:text-brandCyan transition">Canales & VOD</a>
           <a href="#dispositivos" class="hover:text-brandCyan transition">Dispositivos</a>
-          <a href="#planes" class="hover:text-brandCyan transition">Planes</a>
-          <a href="#testimonios" class="hover:text-brandCyan transition">Opiniones</a>
+          <a href="#planes" class="hover:text-brandCyan transition">Planes & Precios</a>
           <a href="#faq" class="hover:text-brandCyan transition">Preguntas</a>
         </nav>
 
-        <!-- Navbar CTAs -->
-        <div class="hidden sm:flex items-center gap-3">
-          <a href="https://wa.me/5492664184731?text=Hola%20DevStream!%20Quiero%20solicitar%20mi%20DEMO%20GRATIS%20de%202%20horas." target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-brandCyan via-brandAccent to-brandPurple text-white shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-[1.03] active:scale-[0.98] transition flex items-center gap-2">
+        <!-- Header Actions: Currency switch & Demo CTA -->
+        <div class="hidden sm:flex items-center gap-4">
+          <!-- Currency mini pill switcher -->
+          <div class="bg-brandDarker/90 border border-white/10 rounded-full p-1 flex items-center text-xs font-bold">
+            <button onclick="changeCurrency('ARS')" id="currBtnARS_nav" class="px-2.5 py-1 rounded-full bg-brandCyan text-brandDark transition">
+              ARS ($)
+            </button>
+            <button onclick="changeCurrency('USD')" id="currBtnUSD_nav" class="px-2.5 py-1 rounded-full text-gray-400 hover:text-white transition">
+              USD ($)
+            </button>
+          </div>
+
+          <a href="https://wa.me/5492664184731?text=Hola%20DevStream!%20Quiero%20pedir%20mi%20DEMO%20GRATIS%20de%202%20horas%20para%20probar%20el%20servicio." target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-brandCyan via-sky-500 to-brandPurple text-white shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/35 hover:scale-105 active:scale-95 transition flex items-center gap-2">
             <i data-lucide="play" class="w-3.5 h-3.5 fill-current"></i>
             Pedir Demo Gratis
           </a>
         </div>
 
-        <!-- Mobile Menu Toggle Button -->
-        <button id="mobileMenuBtn" class="lg:hidden text-gray-300 hover:text-white p-2 focus:outline-none" aria-label="Abrir menú">
+        <!-- Mobile Menu Button -->
+        <button id="mobileMenuBtn" class="lg:hidden text-gray-300 hover:text-white p-2" aria-label="Abrir menú">
           <i data-lucide="menu" class="w-6 h-6"></i>
         </button>
-
       </div>
     </div>
 
-    <!-- Mobile Dropdown Menu -->
-    <div id="mobileMenu" class="hidden lg:hidden border-t border-white/5 bg-brandDarker/95 backdrop-blur-xl px-4 pt-3 pb-6 space-y-3">
-      <a href="#beneficios" class="block py-2 text-base text-gray-300 hover:text-brandCyan mobile-link">Beneficios</a>
-      <a href="#canales" class="block py-2 text-base text-gray-300 hover:text-brandCyan mobile-link">Contenido & Canales</a>
-      <a href="#dispositivos" class="block py-2 text-base text-gray-300 hover:text-brandCyan mobile-link">Dispositivos Compatibles</a>
-      <a href="#planes" class="block py-2 text-base text-gray-300 hover:text-brandCyan mobile-link">Planes y Precios</a>
-      <a href="#testimonios" class="block py-2 text-base text-gray-300 hover:text-brandCyan mobile-link">Testimonios</a>
-      <a href="#faq" class="block py-2 text-base text-gray-300 hover:text-brandCyan mobile-link">Preguntas Frecuentes</a>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden border-t border-white/10 bg-brandDarker/95 backdrop-blur-xl px-5 pt-4 pb-6 space-y-3">
+      <!-- Currency selector on mobile -->
+      <div class="flex items-center justify-between pb-3 border-b border-white/5">
+        <span class="text-xs text-gray-400 font-medium">Moneda preferida:</span>
+        <div class="bg-black/60 border border-white/10 rounded-full p-1 flex items-center text-xs font-bold">
+          <button onclick="changeCurrency('ARS')" id="currBtnARS_mob" class="px-3 py-1 rounded-full bg-brandCyan text-brandDark transition">ARS ($)</button>
+          <button onclick="changeCurrency('USD')" id="currBtnUSD_mob" class="px-3 py-1 rounded-full text-gray-400 hover:text-white transition">USD ($)</button>
+        </div>
+      </div>
+      <a href="#beneficios" class="block py-2 text-sm text-gray-300 hover:text-brandCyan mobile-link">Beneficios</a>
+      <a href="#canales" class="block py-2 text-sm text-gray-300 hover:text-brandCyan mobile-link">Canales en Vivo & VOD</a>
+      <a href="#dispositivos" class="block py-2 text-sm text-gray-300 hover:text-brandCyan mobile-link">Dispositivos Compatibles</a>
+      <a href="#planes" class="block py-2 text-sm text-gray-300 hover:text-brandCyan mobile-link">Planes y Precios</a>
+      <a href="#faq" class="block py-2 text-sm text-gray-300 hover:text-brandCyan mobile-link">Preguntas Frecuentes</a>
       <div class="pt-2">
         <a href="https://wa.me/5492664184731?text=Hola%20DevStream!%20Quiero%20solicitar%20mi%20DEMO%20GRATIS%20de%202%20horas." target="_blank" class="w-full flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-r from-brandCyan to-brandPurple text-white font-bold text-sm shadow-md">
           <i data-lucide="zap" class="w-4 h-4"></i>
@@ -215,130 +212,139 @@
     </div>
   </header>
 
-  <section class="relative pt-12 pb-24 overflow-hidden">
+  <section class="relative pt-10 pb-20 overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <!-- Top Announcement Tag -->
-      <div class="flex justify-center mb-6">
-        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-card border border-brandCyan/30 text-xs font-medium text-cyan-300 animate-pulse-slow shadow-sm">
+      <!-- Top Pills / Badges -->
+      <div class="flex flex-wrap items-center justify-center gap-3 mb-6">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-card border border-brandCyan/40 text-xs font-semibold text-cyan-300 animate-pulse-slow shadow-sm">
           <span class="flex h-2 w-2 rounded-full bg-cyan-400 animate-ping"></span>
-          <span>Tecnología Anti-Freeze v4.2 • Servidores Ultra Rápidos en Latam & USA</span>
+          <span>🌍 Cobertura Global • Funciona en cualquier país con conexión a internet</span>
+        </div>
+        <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/30 text-xs font-medium text-purple-300">
+          <i data-lucide="zap" class="w-3.5 h-3.5 text-yellow-400"></i>
+          <span>Instalación guiada en 5 minutos</span>
         </div>
       </div>
 
-      <!-- Main Headline -->
+      <!-- Main Headline inspired by banners -->
       <div class="text-center max-w-4xl mx-auto mb-10">
-        <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black font-display tracking-tight leading-[1.1] mb-6">
-          La mejor experiencia en <br class="hidden sm:inline">
-          <span class="neon-text-gradient">TV Digital & Streaming</span> sin cortes.
+        <span class="text-xs sm:text-sm font-extrabold uppercase tracking-[0.2em] text-brandCyan block mb-3">
+          CHAU CABLES Y CONTRATOS • TU SMART TV AL MÁXIMO
+        </span>
+        <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black font-display tracking-tight leading-[1.08] mb-6">
+          Mirá el partido <span class="neon-text-gradient">sin cortes</span> y cine estreno todos los días.
         </h1>
-        <p class="text-lg sm:text-xl text-gray-400 font-normal max-w-2xl mx-auto leading-relaxed">
-          Accede a más de <strong class="text-white font-semibold">10,000 canales en vivo</strong>, fútbol premium, películas de estreno y tus series favoritas en calidad 4K UHD. Conexión estable garantizada.
+        <p class="text-base sm:text-xl text-gray-300 font-normal max-w-2xl mx-auto leading-relaxed">
+          Más de <strong class="text-white font-semibold">+1.000 canales en vivo en tu TV</strong>, todo el fútbol local e internacional, temporadas completas y películas de estreno en Full HD y 4K real.
         </p>
 
-        <!-- CTA Buttons Group -->
+        <!-- Dynamic Price Banner Highlight -->
+        <div class="mt-6 inline-flex items-center gap-3 px-5 py-2.5 rounded-2xl bg-white/5 border border-brandCyan/30 backdrop-blur-md">
+          <span class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Acceso Premium:</span>
+          <span id="heroPriceTag" class="text-xl sm:text-2xl font-black text-brandCyan">Desde $5.000 ARS/mes</span>
+          <span class="text-[11px] px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-bold border border-emerald-500/30">Sin ataduras</span>
+        </div>
+
+        <!-- CTA Buttons -->
         <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="https://wa.me/5492664184731?text=Hola%20DevStream!%20Quiero%20probar%20la%20demo%20gratis%20inmediata." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-4 rounded-xl text-sm font-bold uppercase tracking-wider bg-gradient-to-r from-brandCyan via-brandAccent to-brandPurple text-white shadow-xl shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-105 active:scale-95 transition flex items-center justify-center gap-3">
+          <a id="heroWppDemoBtn" href="https://wa.me/5492664184731?text=Hola%20DevStream!%20Quiero%20solicitar%20mi%20demo%20gratis%20antes%20del%20partido." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-4 rounded-xl text-sm font-extrabold uppercase tracking-wider bg-gradient-to-r from-brandCyan via-sky-500 to-brandPurple text-white shadow-xl shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-105 active:scale-95 transition flex items-center justify-center gap-3">
             <i data-lucide="play-circle" class="w-5 h-5"></i>
-            Prueba Gratis 2 Horas
+            Pedí tu prueba por WhatsApp
           </a>
           <a href="#planes" class="w-full sm:w-auto px-8 py-4 rounded-xl text-sm font-semibold text-gray-200 glass-card hover:border-brandCyan/50 hover:text-white transition flex items-center justify-center gap-2">
-            Ver Planes & Ofertas
+            Ver Planes & Pantallas
             <i data-lucide="chevron-right" class="w-4 h-4"></i>
           </a>
         </div>
 
-        <!-- Trust Badges Under Buttons -->
-        <div class="mt-8 flex flex-wrap items-center justify-center gap-6 text-xs text-gray-400">
-          <div class="flex items-center gap-2">
-            <i data-lucide="check-circle-2" class="w-4 h-4 text-brandCyan"></i>
-            <span>Activación Inmediata</span>
+        <!-- Location & Trust Line -->
+        <div class="mt-6 flex flex-wrap items-center justify-center gap-5 text-xs text-gray-400">
+          <div class="flex items-center gap-1.5">
+            <i data-lucide="globe" class="w-4 h-4 text-brandCyan"></i>
+            <span>Activación mundial instantánea</span>
           </div>
-          <div class="flex items-center gap-2">
-            <i data-lucide="shield-check" class="w-4 h-4 text-brandPurple"></i>
-            <span>99.9% Uptime sin congelamientos</span>
+          <div class="flex items-center gap-1.5">
+            <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i>
+            <span>Servidores Anti-Freeze v4.2</span>
           </div>
-          <div class="flex items-center gap-2">
-            <i data-lucide="tv" class="w-4 h-4 text-emerald-400"></i>
-            <span>Compatible con todos tus equipos</span>
+          <div class="flex items-center gap-1.5">
+            <i data-lucide="map-pin" class="w-4 h-4 text-purple-400"></i>
+            <span>Soporte oficial directo (+54 9 266 418-4731)</span>
           </div>
         </div>
       </div>
 
-      <!-- Hero Visual: Simulated Interactive TV Stream Player Mockup -->
-      <div class="relative max-w-5xl mx-auto mt-6">
-        <!-- Glowing Ambient light -->
-        <div class="absolute -inset-1 bg-gradient-to-r from-brandCyan via-purple-600 to-brandPurple rounded-3xl blur-2xl opacity-30 group-hover:opacity-60 transition duration-1000"></div>
+      <!-- Hero Mockup: Simulated Live TV Player with sports switch -->
+      <div class="relative max-w-5xl mx-auto mt-4">
+        <div class="absolute -inset-1 bg-gradient-to-r from-brandCyan via-purple-600 to-brandCyan rounded-3xl blur-2xl opacity-25 hover:opacity-40 transition duration-700"></div>
 
         <div class="relative rounded-2xl bg-[#090c19] border border-white/10 p-2 sm:p-4 shadow-2xl overflow-hidden">
           
-          <!-- Mockup Window Bar -->
+          <!-- Mockup Header Bar -->
           <div class="flex items-center justify-between pb-3 px-2 border-b border-white/5">
             <div class="flex items-center gap-2">
               <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
               <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
               <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
-              <span class="ml-2 text-xs font-mono text-gray-500 flex items-center gap-1.5">
-                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                devstream-iptv://player-core-v4
+              <span class="ml-2 text-xs font-mono text-gray-400 flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                devstream-iptv://global-live-feed
               </span>
             </div>
-            <div class="flex items-center gap-3 text-xs text-gray-400">
-              <span class="px-2 py-0.5 rounded bg-brandCyan/10 text-brandCyan font-semibold border border-brandCyan/20">4K UHD</span>
-              <span class="hidden sm:inline text-gray-500">60 FPS • 0.02ms Latency</span>
+            <div class="flex items-center gap-2 text-xs text-gray-400">
+              <span class="px-2 py-0.5 rounded bg-brandCyan/10 text-brandCyan font-bold border border-brandCyan/20">4K ULTRA HD</span>
+              <span class="hidden sm:inline text-gray-500">60 FPS • Anti-Lag</span>
             </div>
           </div>
 
-          <!-- Video Player Interface Mock -->
+          <!-- Video Player Interface -->
           <div class="relative aspect-video w-full rounded-xl overflow-hidden bg-slate-950 mt-3 group">
-            
-            <!-- Dynamic Background poster with live TV sports/movie feel -->
-            <img id="mockPlayerImg" src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1400&q=80" alt="Transmisión deportiva en vivo" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter brightness-75">
+            <img id="mockPlayerImg" src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1400&q=80" alt="Fútbol y deportes en vivo" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter brightness-80">
 
-            <!-- Overlay Gradient for contrast -->
-            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-black/30"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/20 to-black/30"></div>
 
             <!-- Top live channel badge -->
             <div class="absolute top-4 left-4 flex items-center gap-3">
-              <div class="px-3 py-1 bg-red-600/90 backdrop-blur-md rounded-md text-[11px] font-bold text-white tracking-widest flex items-center gap-1.5 shadow-lg">
+              <div class="px-3 py-1 bg-red-600/90 backdrop-blur-md rounded-md text-[11px] font-extrabold text-white tracking-widest flex items-center gap-1.5 shadow-lg">
                 <span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>
-                EN VIVO
+                EN DIRECTO
               </div>
-              <div class="px-3 py-1 bg-brandDark/80 backdrop-blur-md rounded-md text-xs font-medium text-gray-200 border border-white/10 flex items-center gap-1.5">
+              <div class="px-3 py-1 bg-brandDark/85 backdrop-blur-md rounded-md text-xs font-medium text-gray-200 border border-white/10 flex items-center gap-1.5">
                 <i data-lucide="trophy" class="w-3.5 h-3.5 text-yellow-400"></i>
-                <span id="activeChannelName">Deportes Premium 1 • Champions League</span>
+                <span id="activeChannelName">Fútbol Nacional & Internacional • En Vivo sin Cortes</span>
               </div>
             </div>
 
-            <!-- Resolution Quality Badge -->
+            <!-- Global feed badge -->
             <div class="absolute top-4 right-4 hidden sm:flex items-center gap-2">
-              <span class="px-2.5 py-1 rounded bg-black/60 backdrop-blur-md border border-brandCyan/40 text-[11px] font-mono font-bold text-brandCyan">
-                HDR10 • DOLBY AUDIO
+              <span class="px-2.5 py-1 rounded bg-black/70 backdrop-blur-md border border-brandCyan/40 text-[11px] font-mono font-bold text-brandCyan flex items-center gap-1">
+                <i data-lucide="globe-2" class="w-3.5 h-3.5"></i>
+                GLOBAL CDN
               </span>
             </div>
 
-            <!-- Channel Quick Selector Tabs (Interactive switch inside mockup) -->
-            <div class="absolute bottom-4 left-4 right-4 flex flex-col sm:flex-row items-center justify-between gap-3 bg-black/75 backdrop-blur-md p-3 rounded-xl border border-white/10">
+            <!-- Bottom Interactive Switchers inside Mockup -->
+            <div class="absolute bottom-4 left-4 right-4 flex flex-col sm:flex-row items-center justify-between gap-3 bg-black/80 backdrop-blur-md p-3 rounded-xl border border-white/10">
               
-              <div class="flex items-center gap-2 overflow-x-auto w-full sm:w-auto pb-1 sm:pb-0 scrollbar-none">
-                <button onclick="switchPreviewChannel('sports', 'Deportes Premium 1 • Champions League', 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1400&q=80')" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-brandCyan/20 text-brandCyan border border-brandCyan/40 whitespace-nowrap active-chan-btn">
-                  ⚽ Fútbol en Vivo
+              <div class="flex items-center gap-2 overflow-x-auto w-full sm:w-auto pb-1 sm:pb-0">
+                <button onclick="switchPreviewChannel('sports', 'Fútbol Nacional & Internacional • En Vivo sin Cortes', 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1400&q=80')" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-brandCyan/20 text-brandCyan border border-brandCyan/40 whitespace-nowrap active-chan-btn">
+                  ⚽ Toda la fecha del fútbol
                 </button>
-                <button onclick="switchPreviewChannel('movies', 'DevStream Cine Premiere 4K • Estrenos 2026', 'https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1400&q=80')" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-white/5 hover:bg-white/10 text-gray-300 whitespace-nowrap">
-                  🍿 Cine & Series
+                <button onclick="switchPreviewChannel('movies', 'Cine en Casa Todos los Días • Estrenos 2026', 'https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1400&q=80')" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-white/5 hover:bg-white/10 text-gray-300 whitespace-nowrap">
+                  🍿 Estrenos de Cine
                 </button>
-                <button onclick="switchPreviewChannel('formula1', 'Motorsport Directo • GP Velocidad', 'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=1400&q=80')" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-white/5 hover:bg-white/10 text-gray-300 whitespace-nowrap">
-                  🏎️ Fórmula 1 & Deportes
+                <button onclick="switchPreviewChannel('motorsport', 'Fin de Semana de Deportes • F1 & Tenis Premium', 'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=1400&q=80')" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-white/5 hover:bg-white/10 text-gray-300 whitespace-nowrap">
+                  🏎️ F1 & Motores
                 </button>
-                <button onclick="switchPreviewChannel('kids', 'Kids Animation Zone • 24/7 Sin Cortes', 'https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1400&q=80')" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-white/5 hover:bg-white/10 text-gray-300 whitespace-nowrap">
-                  🧸 Infantiles
+                <button onclick="switchPreviewChannel('series', 'Series Completas Sin Pausas en Full HD', 'https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?auto=format&fit=crop&w=1400&q=80')" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-white/5 hover:bg-white/10 text-gray-300 whitespace-nowrap">
+                  📺 Series Completas
                 </button>
               </div>
 
-              <!-- Action button inside player -->
-              <a href="https://wa.me/5491100000000?text=Hola%20DevStream!%20Quiero%20probar%20estos%20canales%20en%20mi%20Smart%20TV." target="_blank" class="w-full sm:w-auto px-4 py-1.5 bg-brandCyan text-brandDark font-bold text-xs rounded-lg hover:bg-white transition flex items-center justify-center gap-1.5 shrink-0">
+              <a id="playerWppBtn" href="https://wa.me/5492664184731?text=Hola%20DevStream!%20Quiero%20activar%20mi%20acceso%20inmediato%20en%20mi%20pantalla." target="_blank" class="w-full sm:w-auto px-4 py-2 bg-brandCyan text-brandDark font-bold text-xs rounded-lg hover:bg-white transition flex items-center justify-center gap-1.5 shrink-0">
                 <i data-lucide="zap" class="w-3.5 h-3.5 fill-current"></i>
-                Ver en mi pantalla
+                Activar Ahora
               </a>
             </div>
 
@@ -350,36 +356,36 @@
     </div>
   </section>
 
-  <section class="border-y border-white/5 bg-brandDarker/60 py-10">
+  <section class="border-y border-white/5 bg-brandDarker/70 py-9">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
         
-        <div class="p-4">
+        <div class="p-3">
           <div class="text-3xl sm:text-4xl font-extrabold font-display text-white mb-1">
-            +<span class="text-brandCyan">10,000</span>
+            +<span class="text-brandCyan">1.000</span>
           </div>
-          <div class="text-xs uppercase tracking-wider text-gray-400 font-medium">Canales en Vivo</div>
+          <div class="text-xs uppercase tracking-wider text-gray-400 font-medium">Canales en Vivo HD & 4K</div>
         </div>
 
-        <div class="p-4">
+        <div class="p-3">
           <div class="text-3xl sm:text-4xl font-extrabold font-display text-white mb-1">
-            +<span class="text-purple-400">45,000</span>
+            <span class="text-purple-400">100%</span>
           </div>
-          <div class="text-xs uppercase tracking-wider text-gray-400 font-medium">Películas & Series VOD</div>
+          <div class="text-xs uppercase tracking-wider text-gray-400 font-medium">Fútbol y Ligas Sin Cortes</div>
         </div>
 
-        <div class="p-4">
+        <div class="p-3">
           <div class="text-3xl sm:text-4xl font-extrabold font-display text-white mb-1">
-            <span class="text-brandCyan">99.9%</span>
+            <span class="text-emerald-400">5 Min</span>
           </div>
-          <div class="text-xs uppercase tracking-wider text-gray-400 font-medium">Servidores Anti-Freeze</div>
+          <div class="text-xs uppercase tracking-wider text-gray-400 font-medium">Instalación Guiada Paso a Paso</div>
         </div>
 
-        <div class="p-4">
+        <div class="p-3">
           <div class="text-3xl sm:text-4xl font-extrabold font-display text-white mb-1">
-            <span class="text-emerald-400">24/7</span>
+            <span class="text-brandCyan">Mundial</span>
           </div>
-          <div class="text-xs uppercase tracking-wider text-gray-400 font-medium">Soporte por WhatsApp</div>
+          <div class="text-xs uppercase tracking-wider text-gray-400 font-medium">Compatible en Todo el Planeta</div>
         </div>
 
       </div>
@@ -391,81 +397,82 @@
       
       <div class="text-center max-w-3xl mx-auto mb-16">
         <span class="text-xs font-bold uppercase tracking-widest text-brandCyan bg-brandCyan/10 px-3 py-1 rounded-full border border-brandCyan/20">
-          ¿Por qué elegir DevStream?
+          ¿Por qué cambiarte a DevStream?
         </span>
         <h2 class="text-3xl sm:text-5xl font-black font-display text-white mt-4 mb-4">
-          Tecnología de punta diseñada para <span class="neon-text-gradient">cero interrupciones</span>
+          Cansado de facturas caras de cable. <br>
+          <span class="neon-text-gradient">Pasá a la televisión digital sin ataduras.</span>
         </h2>
         <p class="text-gray-400 text-base">
-          Desarrollado para quienes no toleran que su transmisión se caiga en el minuto 90 ni que las películas se queden cargando.
+          Un solo abono fijo para todo el contenido. Sin contratos forzosos, sin técnicos que demoran días y accesible desde cualquier rincón del mundo.
         </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         
-        <!-- Feature 1 -->
+        <!-- Post 1 Hook: Chau cables y contratos -->
         <div class="glass-card glass-card-hover p-8 rounded-2xl border border-white/5 relative group">
           <div class="w-14 h-14 rounded-xl bg-cyan-500/10 border border-brandCyan/30 flex items-center justify-center text-brandCyan mb-6 group-hover:scale-110 group-hover:bg-brandCyan group-hover:text-brandDark transition duration-300">
-            <i data-lucide="zap" class="w-7 h-7"></i>
+            <i data-lucide="scissors" class="w-7 h-7"></i>
           </div>
-          <h3 class="text-xl font-bold font-display text-white mb-3">Anti-Freeze v4.2</h3>
+          <h3 class="text-xl font-bold font-display text-white mb-2">Chau Cables y Contratos</h3>
           <p class="text-gray-400 text-sm leading-relaxed">
-            Algoritmo inteligente de enrutamiento CDN que salta a servidores espejo de respaldo en microsegundos, eliminando los molestos cortes durante transmisiones masivas.
+            Olvidate de cables coaxiales engorrosos y facturas que suben todos los meses. Contratás el mes que querés y lo usás directamente con tu conexión de internet.
           </p>
         </div>
 
-        <!-- Feature 2 -->
+        <!-- Post 2 & 7 Hook: Mira el partido sin cortes -->
         <div class="glass-card glass-card-hover p-8 rounded-2xl border border-white/5 relative group">
           <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-brandPurple/30 flex items-center justify-center text-brandPurple mb-6 group-hover:scale-110 group-hover:bg-brandPurple group-hover:text-white transition duration-300">
-            <i data-lucide="tv-2" class="w-7 h-7"></i>
+            <i data-lucide="trophy" class="w-7 h-7"></i>
           </div>
-          <h3 class="text-xl font-bold font-display text-white mb-3">Calidad 4K UHD & 60 FPS</h3>
+          <h3 class="text-xl font-bold font-display text-white mb-2">Mirá el Partido Sin Cortes</h3>
           <p class="text-gray-400 text-sm leading-relaxed">
-            Transmisiones nítidas en Full HD y 4K real. Disfruta de partidos, carreras y cine con la máxima fluidez que tu pantalla merece.
+            Toda la fecha del fútbol nacional e internacional: Liga Argentina, Champions League, Premier League, Libertadores y canales deportivos premium en alta definición 60 FPS.
           </p>
         </div>
 
-        <!-- Feature 3 -->
+        <!-- Post 3 Hook: Tu Smart TV al maximo -->
         <div class="glass-card glass-card-hover p-8 rounded-2xl border border-white/5 relative group">
-          <div class="w-14 h-14 rounded-xl bg-blue-500/10 border border-brandAccent/30 flex items-center justify-center text-brandAccent mb-6 group-hover:scale-110 group-hover:bg-brandAccent group-hover:text-white transition duration-300">
-            <i data-lucide="calendar" class="w-7 h-7"></i>
+          <div class="w-14 h-14 rounded-xl bg-sky-500/10 border border-sky-500/30 flex items-center justify-center text-sky-400 mb-6 group-hover:scale-110 group-hover:bg-sky-500 group-hover:text-brandDark transition duration-300">
+            <i data-lucide="tv" class="w-7 h-7"></i>
           </div>
-          <h3 class="text-xl font-bold font-display text-white mb-3">Guía EPG Interactiva</h3>
+          <h3 class="text-xl font-bold font-display text-white mb-2">Tu Smart TV al Máximo</h3>
           <p class="text-gray-400 text-sm leading-relaxed">
-            Parrilla electrónica de programación integrada para saber qué está pasando en tiempo real y qué programa se emitirá después.
+            Aprovechá la resolución 4K y Full HD de tu pantalla. Canales organizados, guía interactiva de programación (EPG) y buscador instantáneo de películas.
           </p>
         </div>
 
-        <!-- Feature 4 -->
+        <!-- Post 6 Hook: Instalacion en 5 minutos -->
         <div class="glass-card glass-card-hover p-8 rounded-2xl border border-white/5 relative group">
           <div class="w-14 h-14 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 mb-6 group-hover:scale-110 group-hover:bg-emerald-500 group-hover:text-slate-950 transition duration-300">
-            <i data-lucide="film" class="w-7 h-7"></i>
+            <i data-lucide="timer" class="w-7 h-7"></i>
           </div>
-          <h3 class="text-xl font-bold font-display text-white mb-3">VOD con Estrenos Diarios</h3>
+          <h3 class="text-xl font-bold font-display text-white mb-2">Instalación en 5 Minutos</h3>
           <p class="text-gray-400 text-sm leading-relaxed">
-            Catálogo completo de plataformas (Netflix, HBO Max, Disney+, Prime, Apple TV) actualizado de forma continua sin pagar membresías adicionales.
+            Te guiamos paso a paso por WhatsApp. Descargás la app sugerida en tu Smart TV, TV Box o celu, ingresás tu usuario y listo: estás mirando tele en minutos.
           </p>
         </div>
 
-        <!-- Feature 5 -->
+        <!-- Post 5 & 9 Hook: Cine en casa y series -->
         <div class="glass-card glass-card-hover p-8 rounded-2xl border border-white/5 relative group">
           <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-6 group-hover:scale-110 group-hover:bg-amber-500 group-hover:text-slate-950 transition duration-300">
-            <i data-lucide="monitor-smartphone" class="w-7 h-7"></i>
+            <i data-lucide="clapperboard" class="w-7 h-7"></i>
           </div>
-          <h3 class="text-xl font-bold font-display text-white mb-3">Multi-Dispositivo Simultáneo</h3>
+          <h3 class="text-xl font-bold font-display text-white mb-2">Cine & Series Completas</h3>
           <p class="text-gray-400 text-sm leading-relaxed">
-            Conecta tu TV en la sala, tu tablet en la habitación o tu teléfono estés donde estés. Cada miembro del hogar disfruta su contenido.
+            Estrenos actualizados cada semana y temporadas completas de las principales plataformas streaming, todo integrado en una sola suscripción sin pagos extra.
           </p>
         </div>
 
-        <!-- Feature 6 -->
+        <!-- Post 10 Hook: Fin de semana de deportes -->
         <div class="glass-card glass-card-hover p-8 rounded-2xl border border-white/5 relative group">
           <div class="w-14 h-14 rounded-xl bg-rose-500/10 border border-rose-500/30 flex items-center justify-center text-rose-400 mb-6 group-hover:scale-110 group-hover:bg-rose-500 group-hover:text-white transition duration-300">
-            <i data-lucide="message-square-code" class="w-7 h-7"></i>
+            <i data-lucide="gauge" class="w-7 h-7"></i>
           </div>
-          <h3 class="text-xl font-bold font-display text-white mb-3">Soporte Técnico Directo</h3>
+          <h3 class="text-xl font-bold font-display text-white mb-2">Fin de Semana de Deportes</h3>
           <p class="text-gray-400 text-sm leading-relaxed">
-            Sin bots interminables. Te asistimos en vivo por WhatsApp para instalar aplicaciones, configurar DNS o renovar en menos de 5 minutos.
+            Automovilismo (F1, TN, TC), tenis ATP/WTA, básquet NBA, UFC / boxeo PPV y deportes extremos con transmisiones directas y múltiples opciones de audio.
           </p>
         </div>
 
@@ -474,30 +481,30 @@
     </div>
   </section>
 
-  <section id="canales" class="py-20 bg-brandDarker/70 border-t border-white/5">
+  <section id="canales" class="py-20 bg-brandDarker/80 border-t border-white/5">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="flex flex-col md:flex-row items-start md:items-end justify-between gap-6 mb-12">
         <div>
           <span class="text-xs font-bold uppercase tracking-widest text-brandCyan bg-brandCyan/10 px-3 py-1 rounded-full border border-brandCyan/20">
-            Todo lo que te gusta ver
+            Catálogo Global
           </span>
           <h2 class="text-3xl sm:text-4xl font-black font-display text-white mt-3">
-            Explora las Categorías de Contenido
+            Todo lo que te gusta ver en una sola app
           </h2>
         </div>
         <p class="text-sm text-gray-400 max-w-md">
-          Selecciona una categoría para ver canales y coberturas disponibles en nuestra red premium.
+          Disfrutá de canales de Argentina, Latinoamérica, España, Estados Unidos y señales internacionales en vivo las 24 horas.
         </p>
       </div>
 
-      <!-- Category Filter Tabs -->
+      <!-- Categories Filter Tabs -->
       <div class="flex flex-wrap gap-2 mb-8">
         <button onclick="filterCategory('sports', this)" class="category-btn active px-4 py-2 rounded-xl text-xs font-bold bg-brandCyan text-brandDark transition flex items-center gap-2">
-          <i data-lucide="trophy" class="w-4 h-4"></i> Deportes & Fútbol VIP
+          <i data-lucide="trophy" class="w-4 h-4"></i> Fútbol & Deportes VIP
         </button>
         <button onclick="filterCategory('cinema', this)" class="category-btn px-4 py-2 rounded-xl text-xs font-bold glass-card text-gray-300 hover:text-white hover:border-brandCyan/40 transition flex items-center gap-2">
-          <i data-lucide="film" class="w-4 h-4"></i> Cine & Estrenos VOD
+          <i data-lucide="film" class="w-4 h-4"></i> Cine de Estreno VOD
         </button>
         <button onclick="filterCategory('series', this)" class="category-btn px-4 py-2 rounded-xl text-xs font-bold glass-card text-gray-300 hover:text-white hover:border-brandCyan/40 transition flex items-center gap-2">
           <i data-lucide="clapperboard" class="w-4 h-4"></i> Series Completas
@@ -506,14 +513,12 @@
           <i data-lucide="smile" class="w-4 h-4"></i> Infantiles & Animación
         </button>
         <button onclick="filterCategory('news', this)" class="category-btn px-4 py-2 rounded-xl text-xs font-bold glass-card text-gray-300 hover:text-white hover:border-brandCyan/40 transition flex items-center gap-2">
-          <i data-lucide="globe-2" class="w-4 h-4"></i> Noticias & Docs
+          <i data-lucide="globe-2" class="w-4 h-4"></i> Canales Internacionales
         </button>
       </div>
 
-      <!-- Dynamic Category Display Cards -->
-      <div id="categoryCardsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <!-- Javascript fills this dynamically -->
-      </div>
+      <!-- Category Cards Grid -->
+      <div id="categoryCardsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
 
     </div>
   </section>
@@ -522,14 +527,14 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-3xl mx-auto mb-16">
-        <span class="text-xs font-bold uppercase tracking-widest text-brandPurple bg-brandPurple/10 px-3 py-1 rounded-full border border-brandPurple/20">
+        <span class="text-xs font-bold uppercase tracking-widest text-purple-400 bg-purple-500/10 px-3 py-1 rounded-full border border-purple-500/20">
           Compatibilidad Universal
         </span>
         <h2 class="text-3xl sm:text-5xl font-black font-display text-white mt-4 mb-4">
-          Lleva tu TV a cualquier pantalla
+          Compatible con Smart TV, celular y TV Box
         </h2>
         <p class="text-gray-400 text-base">
-          Instala DevStream en tus aplicaciones preferidas: IBO Player, IPTV Smarters Pro, XCIPTV, SS IPTV, TiviMate o formato M3U / Mag.
+          Configuración rápida en reproductores de alta velocidad: IPTV Smarters Pro, IBO Player, XCIPTV, TiviMate, SS IPTV, Smart STB o lista M3U.
         </p>
       </div>
 
@@ -541,31 +546,31 @@
             <i data-lucide="tv" class="w-6 h-6"></i>
           </div>
           <h4 class="font-bold text-white text-sm">Smart TV</h4>
-          <span class="text-[11px] text-gray-400 mt-1">Samsung Tizen, LG WebOS, Sony, TCL</span>
+          <span class="text-[11px] text-gray-400 mt-1">Samsung, LG WebOS, Sony, TCL, Philips</span>
         </div>
 
         <div class="glass-card p-6 rounded-2xl text-center flex flex-col items-center justify-center group hover:border-brandCyan/40 transition duration-300">
           <div class="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center text-emerald-400 mb-3 group-hover:scale-110 transition">
-            <i data-lucide="smartphone" class="w-6 h-6"></i>
+            <i data-lucide="box" class="w-6 h-6"></i>
           </div>
-          <h4 class="font-bold text-white text-sm">Android & TV Box</h4>
-          <span class="text-[11px] text-gray-400 mt-1">Celulares, Tablets, Xiaomi Mi Box</span>
+          <h4 class="font-bold text-white text-sm">TV Box</h4>
+          <span class="text-[11px] text-gray-400 mt-1">Xiaomi Mi Box, Chromecast Google TV</span>
         </div>
 
         <div class="glass-card p-6 rounded-2xl text-center flex flex-col items-center justify-center group hover:border-brandCyan/40 transition duration-300">
           <div class="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center text-orange-400 mb-3 group-hover:scale-110 transition">
             <i data-lucide="flame" class="w-6 h-6"></i>
           </div>
-          <h4 class="font-bold text-white text-sm">Fire TV Stick</h4>
-          <span class="text-[11px] text-gray-400 mt-1">Amazon Fire TV 4K & Lite</span>
+          <h4 class="font-bold text-white text-sm">Fire Stick</h4>
+          <span class="text-[11px] text-gray-400 mt-1">Amazon Fire TV 4K, Lite y Max</span>
         </div>
 
         <div class="glass-card p-6 rounded-2xl text-center flex flex-col items-center justify-center group hover:border-brandCyan/40 transition duration-300">
           <div class="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center text-purple-400 mb-3 group-hover:scale-110 transition">
-            <i data-lucide="tablet" class="w-6 h-6"></i>
+            <i data-lucide="smartphone" class="w-6 h-6"></i>
           </div>
-          <h4 class="font-bold text-white text-sm">Apple iOS & TV</h4>
-          <span class="text-[11px] text-gray-400 mt-1">iPhone, iPad & Apple TV Box</span>
+          <h4 class="font-bold text-white text-sm">Celulares</h4>
+          <span class="text-[11px] text-gray-400 mt-1">Android & iPhone / iPad iOS</span>
         </div>
 
         <div class="glass-card p-6 rounded-2xl text-center flex flex-col items-center justify-center group hover:border-brandCyan/40 transition duration-300">
@@ -573,257 +578,282 @@
             <i data-lucide="laptop" class="w-6 h-6"></i>
           </div>
           <h4 class="font-bold text-white text-sm">PC & Mac</h4>
-          <span class="text-[11px] text-gray-400 mt-1">VLC, WebPlayer o Navegador</span>
+          <span class="text-[11px] text-gray-400 mt-1">Windows, MacBook, VLC y Navegador</span>
         </div>
 
         <div class="glass-card p-6 rounded-2xl text-center flex flex-col items-center justify-center group hover:border-brandCyan/40 transition duration-300">
           <div class="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center text-yellow-400 mb-3 group-hover:scale-110 transition">
             <i data-lucide="cast" class="w-6 h-6"></i>
           </div>
-          <h4 class="font-bold text-white text-sm">Chromecast & Mag</h4>
-          <span class="text-[11px] text-gray-400 mt-1">Google TV & MAG Boxes</span>
+          <h4 class="font-bold text-white text-sm">Tablets</h4>
+          <span class="text-[11px] text-gray-400 mt-1">Llevalo en tus viajes o vacaciones</span>
         </div>
 
       </div>
 
-      <!-- Simple setup instruction banner -->
-      <div class="mt-10 p-6 rounded-2xl glass-card border border-brandCyan/20 flex flex-col md:flex-row items-center justify-between gap-6">
+      <!-- Installation in 5 minutes assist box -->
+      <div class="mt-12 p-6 rounded-2xl glass-card border border-brandCyan/30 flex flex-col md:flex-row items-center justify-between gap-6">
         <div class="flex items-center gap-4">
           <div class="w-12 h-12 rounded-xl bg-brandCyan/20 flex items-center justify-center text-brandCyan shrink-0">
-            <i data-lucide="wrench" class="w-6 h-6"></i>
+            <i data-lucide="message-square" class="w-6 h-6"></i>
           </div>
           <div>
-            <h4 class="font-bold text-white text-base">¿No sabes cómo instalarlo en tu tele?</h4>
-            <p class="text-sm text-gray-400">Nuestro equipo te guía paso a paso por WhatsApp con tutoriales y fotos hasta dejarlo funcionando.</p>
+            <h4 class="font-bold text-white text-base">Escribinos y te guiamos paso a paso</h4>
+            <p class="text-sm text-gray-400">Te enviamos los enlaces de la aplicación recomendada y tu cuenta activa al instante.</p>
           </div>
         </div>
-        <a href="https://wa.me/5491100000000?text=Hola%20DevStream!%20Necesito%20ayuda%20para%20configurar%20mi%20dispositivo." target="_blank" class="px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs uppercase tracking-wider whitespace-nowrap transition">
-          Pedir Guía de Instalación
+        <a href="https://wa.me/5492664184731?text=Hola%20DevStream!%20Necesito%20asistencia%20para%20instalarlo%20en%20mi%20dispositivo." target="_blank" class="px-6 py-3.5 rounded-xl bg-brandCyan text-brandDark hover:bg-white font-extrabold text-xs uppercase tracking-wider whitespace-nowrap transition shadow-lg shadow-cyan-500/20">
+          Pedir Guía por WhatsApp
         </a>
       </div>
 
     </div>
   </section>
 
-  <section id="planes" class="py-24 bg-brandDarker/80 border-t border-white/5 relative">
-    
+  <section id="planes" class="py-24 bg-brandDarker/90 border-t border-white/5 relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="text-center max-w-3xl mx-auto mb-16">
+      <div class="text-center max-w-3xl mx-auto mb-14">
         <span class="text-xs font-bold uppercase tracking-widest text-brandCyan bg-brandCyan/10 px-3 py-1 rounded-full border border-brandCyan/20">
-          Precios Transparentes
+          Precios Claros y Accesibles
         </span>
         <h2 class="text-3xl sm:text-5xl font-black font-display text-white mt-4 mb-4">
-          Elige el plan que se adapte a ti
+          Elegí tu plan con activación inmediata
         </h2>
         <p class="text-gray-400 text-base">
-          Sin contratos de permanencia. Cancela o renueva cuando quieras con activación instantánea.
+          Sin contratos forzosos ni renovaciones automáticas sorpresivas. Pagás mes a mes o aprovechás los descuentos por varios meses.
         </p>
 
-        <!-- Screens Selector Toggle -->
-        <div class="mt-8 inline-flex p-1.5 rounded-2xl bg-[#090c19] border border-white/10">
-          <button id="btnScreen1" onclick="setScreens(1)" class="px-5 py-2 rounded-xl text-xs font-bold bg-brandCyan text-brandDark transition shadow-md">
-            1 Conexión (1 Pantalla)
+        <!-- CURRENCY SWITCHER (ARS / USD) -->
+        <div class="mt-8 inline-flex items-center gap-2 p-1.5 rounded-2xl bg-[#090d1f] border border-brandCyan/40 shadow-lg">
+          <span class="text-xs font-semibold text-gray-400 px-3">Moneda:</span>
+          <button id="currToggleARS" onclick="changeCurrency('ARS')" class="px-5 py-2 rounded-xl text-xs font-extrabold bg-brandCyan text-brandDark transition shadow-md">
+            🇦🇷 Pesos Argentinos ($ ARS)
           </button>
-          <button id="btnScreen2" onclick="setScreens(3)" class="px-5 py-2 rounded-xl text-xs font-bold text-gray-400 hover:text-white transition">
-            3 Conexiones (Multi-pantalla)
+          <button id="currToggleUSD" onclick="changeCurrency('USD')" class="px-5 py-2 rounded-xl text-xs font-extrabold text-gray-400 hover:text-white transition">
+            🌎 Dólares / Internacional ($ USD)
           </button>
+        </div>
+
+        <!-- Screens switch -->
+        <div class="mt-4 block">
+          <div class="inline-flex p-1 rounded-xl bg-white/5 border border-white/10 text-xs">
+            <button id="screenBtn1" onclick="setScreenOption(1)" class="px-4 py-1.5 rounded-lg font-bold bg-brandCyan/20 text-brandCyan border border-brandCyan/30">
+              1 Pantalla (Conexión individual)
+            </button>
+            <button id="screenBtn3" onclick="setScreenOption(3)" class="px-4 py-1.5 rounded-lg font-bold text-gray-400 hover:text-white">
+              3 Pantallas (Multi-dispositivo simultáneo)
+            </button>
+          </div>
         </div>
       </div>
 
       <!-- Pricing Cards Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 items-stretch">
         
-        <!-- Plan 1: 1 Mes -->
-        <div class="glass-card rounded-2xl p-7 flex flex-col justify-between border border-white/10 hover:border-brandCyan/30 transition duration-300">
+        <!-- Plan 1 Mes -->
+        <div class="glass-card rounded-2xl p-7 flex flex-col justify-between border border-white/10 hover:border-brandCyan/40 transition duration-300">
           <div>
             <div class="flex justify-between items-center mb-4">
-              <span class="text-xs font-bold tracking-wider uppercase text-gray-400">Plan Básico</span>
+              <span class="text-xs font-bold tracking-wider uppercase text-gray-400">Plan Mensual</span>
               <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-white/10 text-gray-300">Flexible</span>
             </div>
-            <h3 class="text-2xl font-black font-display text-white mb-2">1 Mes</h3>
-            <p class="text-xs text-gray-400 mb-6">Ideal para probar toda la grilla de canales y el servicio.</p>
+            <h3 class="text-2xl font-black font-display text-white mb-1">1 Mes</h3>
+            <p class="text-xs text-gray-400 mb-6">Ideal para probar la estabilidad y toda la grilla de canales.</p>
             
             <div class="flex items-baseline gap-1 mb-6">
-              <span class="text-4xl font-black font-display text-white plan-price-1m">$8.50</span>
-              <span class="text-xs text-gray-400 font-medium">/ mes</span>
+              <span id="priceVal1m" class="text-3xl sm:text-4xl font-black font-display text-white">$5.000</span>
+              <span id="priceUnit1m" class="text-xs text-gray-400 font-medium">/ mes</span>
             </div>
 
             <ul class="space-y-3 text-xs text-gray-300 mb-8">
-              <li class="flex items-center gap-2.5">
+              <li class="flex items-center gap-2">
                 <i data-lucide="check" class="w-4 h-4 text-brandCyan shrink-0"></i>
-                <span>+10,000 Canales en Vivo SD/HD/FHD/4K</span>
+                <span>+1.000 Canales en Vivo en HD/4K</span>
               </li>
-              <li class="flex items-center gap-2.5">
+              <li class="flex items-center gap-2">
                 <i data-lucide="check" class="w-4 h-4 text-brandCyan shrink-0"></i>
-                <span>+45,000 Películas y Series VOD</span>
+                <span>Todo el fútbol y deportes sin cortes</span>
               </li>
-              <li class="flex items-center gap-2.5">
+              <li class="flex items-center gap-2">
                 <i data-lucide="check" class="w-4 h-4 text-brandCyan shrink-0"></i>
-                <span class="screen-text">1 Pantalla simultánea</span>
+                <span class="plan-screen-desc">1 Pantalla simultánea</span>
               </li>
-              <li class="flex items-center gap-2.5">
+              <li class="flex items-center gap-2">
                 <i data-lucide="check" class="w-4 h-4 text-brandCyan shrink-0"></i>
-                <span>Servidor Anti-Freeze 4.2</span>
+                <span>Cine y Series VOD de estreno</span>
               </li>
-              <li class="flex items-center gap-2.5">
+              <li class="flex items-center gap-2">
                 <i data-lucide="check" class="w-4 h-4 text-brandCyan shrink-0"></i>
-                <span>Eventos PPV y Deportes VIP</span>
+                <span>Instalación y soporte directo</span>
               </li>
             </ul>
           </div>
 
-          <a href="#" onclick="buyPlan('1 Mes')" class="plan-btn-1m w-full py-3.5 rounded-xl text-center text-xs font-bold uppercase tracking-wider glass-card border-white/20 hover:border-brandCyan text-white hover:bg-brandCyan hover:text-brandDark transition duration-300">
+          <button onclick="orderViaWhatsApp('1 Mes')" class="w-full py-3.5 rounded-xl text-center text-xs font-bold uppercase tracking-wider glass-card border border-white/20 hover:border-brandCyan text-white hover:bg-brandCyan hover:text-brandDark transition duration-300">
             Contratar 1 Mes
-          </a>
+          </button>
         </div>
 
-        <!-- Plan 2: 3 Meses (Popular) -->
-        <div class="relative glass-card rounded-2xl p-7 flex flex-col justify-between border-2 border-brandCyan shadow-2xl shadow-cyan-500/10 scale-100 lg:-translate-y-2">
+        <!-- Plan 3 Meses (Popular) -->
+        <div class="relative glass-card rounded-2xl p-7 flex flex-col justify-between border-2 border-brandCyan shadow-2xl shadow-cyan-500/15 scale-100 lg:-translate-y-2">
           <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-gradient-to-r from-brandCyan to-brandPurple text-white text-[10px] font-extrabold uppercase tracking-widest shadow-md">
-            ⭐ El más elegido
+            ⭐ Más Elegido
           </div>
 
           <div>
             <div class="flex justify-between items-center mb-4 mt-2">
               <span class="text-xs font-bold tracking-wider uppercase text-brandCyan">Trimestral</span>
-              <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-brandCyan/20 text-brandCyan">Ahorra 20%</span>
+              <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-brandCyan/20 text-brandCyan">Ahorro 20%</span>
             </div>
-            <h3 class="text-2xl font-black font-display text-white mb-2">3 Meses</h3>
-            <p class="text-xs text-gray-400 mb-6">El balance perfecto entre ahorro y estabilidad continua.</p>
+            <h3 class="text-2xl font-black font-display text-white mb-1">3 Meses</h3>
+            <p class="text-xs text-gray-400 mb-6">Tranquilidad para seguir los torneos y series del momento.</p>
             
             <div class="flex items-baseline gap-1 mb-6">
-              <span class="text-4xl font-black font-display text-white plan-price-3m">$22.00</span>
-              <span class="text-xs text-gray-400 font-medium">/ total</span>
+              <span id="priceVal3m" class="text-3xl sm:text-4xl font-black font-display text-white">$13.500</span>
+              <span id="priceUnit3m" class="text-xs text-gray-400 font-medium">/ total</span>
             </div>
 
             <ul class="space-y-3 text-xs text-gray-300 mb-8">
-              <li class="flex items-center gap-2.5">
+              <li class="flex items-center gap-2">
                 <i data-lucide="check" class="w-4 h-4 text-brandCyan shrink-0"></i>
-                <span class="font-semibold text-white">+10,000 Canales en Vivo 4K</span>
+                <span class="font-semibold text-white">+1.000 Canales en Vivo en HD/4K</span>
               </li>
-              <li class="flex items-center gap-2.5">
+              <li class="flex items-center gap-2">
                 <i data-lucide="check" class="w-4 h-4 text-brandCyan shrink-0"></i>
-                <span>+45,000 Películas y Series VOD</span>
+                <span>Toda la fecha del fútbol sin cortes</span>
               </li>
-              <li class="flex items-center gap-2.5">
+              <li class="flex items-center gap-2">
                 <i data-lucide="check" class="w-4 h-4 text-brandCyan shrink-0"></i>
-                <span class="screen-text">1 Pantalla simultánea</span>
+                <span class="plan-screen-desc">1 Pantalla simultánea</span>
               </li>
-              <li class="flex items-center gap-2.5">
+              <li class="flex items-center gap-2">
                 <i data-lucide="check" class="w-4 h-4 text-brandCyan shrink-0"></i>
-                <span>Canales para Adultos (Opcional con PIN)</span>
+                <span>Guía EPG interactiva</span>
               </li>
-              <li class="flex items-center gap-2.5">
+              <li class="flex items-center gap-2">
                 <i data-lucide="check" class="w-4 h-4 text-brandCyan shrink-0"></i>
-                <span class="text-brandCyan font-semibold">Soporte Prioritario WhatsApp</span>
+                <span class="text-brandCyan font-semibold">Atención Prioritaria por WhatsApp</span>
               </li>
             </ul>
           </div>
 
-          <a href="#" onclick="buyPlan('3 Meses')" class="plan-btn-3m w-full py-3.5 rounded-xl text-center text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-brandCyan to-brandPurple text-white shadow-lg shadow-cyan-500/30 hover:scale-105 active:scale-95 transition">
-            Comprar 3 Meses
-          </a>
+          <button onclick="orderViaWhatsApp('3 Meses')" class="w-full py-3.5 rounded-xl text-center text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-brandCyan via-sky-500 to-brandPurple text-white shadow-lg shadow-cyan-500/30 hover:scale-105 active:scale-95 transition">
+            Pedir 3 Meses
+          </button>
         </div>
 
-        <!-- Plan 3: 6 Meses -->
-        <div class="glass-card rounded-2xl p-7 flex flex-col justify-between border border-white/10 hover:border-brandPurple/40 transition duration-300">
+        <!-- Plan 6 Meses -->
+        <div class="glass-card rounded-2xl p-7 flex flex-col justify-between border border-white/10 hover:border-purple-400/40 transition duration-300">
           <div>
             <div class="flex justify-between items-center mb-4">
               <span class="text-xs font-bold tracking-wider uppercase text-purple-400">Semestral</span>
-              <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-purple-500/20 text-purple-300">Ahorra 35%</span>
+              <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-purple-500/20 text-purple-300">Ahorro 35%</span>
             </div>
-            <h3 class="text-2xl font-black font-display text-white mb-2">6 Meses</h3>
-            <p class="text-xs text-gray-400 mb-6">Tranquilidad por medio año con tarifa preferencial.</p>
+            <h3 class="text-2xl font-black font-display text-white mb-1">6 Meses</h3>
+            <p class="text-xs text-gray-400 mb-6">Medio año entero de entretenimiento sin pensar en renovar.</p>
             
             <div class="flex items-baseline gap-1 mb-6">
-              <span class="text-4xl font-black font-display text-white plan-price-6m">$38.00</span>
-              <span class="text-xs text-gray-400 font-medium">/ total</span>
+              <span id="priceVal6m" class="text-3xl sm:text-4xl font-black font-display text-white">$24.000</span>
+              <span id="priceUnit6m" class="text-xs text-gray-400 font-medium">/ total</span>
             </div>
 
             <ul class="space-y-3 text-xs text-gray-300 mb-8">
-              <li class="flex items-center gap-2.5">
-                <i data-lucide="check" class="w-4 h-4 text-brandPurple shrink-0"></i>
-                <span>Acceso Completo Canales & VOD</span>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-purple-400 shrink-0"></i>
+                <span>Acceso completo Canales + VOD</span>
               </li>
-              <li class="flex items-center gap-2.5">
-                <i data-lucide="check" class="w-4 h-4 text-brandPurple shrink-0"></i>
-                <span class="screen-text">1 Pantalla simultánea</span>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-purple-400 shrink-0"></i>
+                <span class="plan-screen-desc">1 Pantalla simultánea</span>
               </li>
-              <li class="flex items-center gap-2.5">
-                <i data-lucide="check" class="w-4 h-4 text-brandPurple shrink-0"></i>
-                <span>Toda la Liga, Champions, F1, UFC</span>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-purple-400 shrink-0"></i>
+                <span>Fútbol de primera y copas internacionales</span>
               </li>
-              <li class="flex items-center gap-2.5">
-                <i data-lucide="check" class="w-4 h-4 text-brandPurple shrink-0"></i>
-                <span>Guía EPG automatizada</span>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-purple-400 shrink-0"></i>
+                <span>Servidor Anti-Freeze de alta estabilidad</span>
               </li>
-              <li class="flex items-center gap-2.5">
-                <i data-lucide="check" class="w-4 h-4 text-brandPurple shrink-0"></i>
-                <span>Garantía de reposición inmediata</span>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-purple-400 shrink-0"></i>
+                <span>Soporte continuo personalizado</span>
               </li>
             </ul>
           </div>
 
-          <a href="#" onclick="buyPlan('6 Meses')" class="plan-btn-6m w-full py-3.5 rounded-xl text-center text-xs font-bold uppercase tracking-wider glass-card border-white/20 hover:border-purple-400 text-white hover:bg-purple-600 transition duration-300">
+          <button onclick="orderViaWhatsApp('6 Meses')" class="w-full py-3.5 rounded-xl text-center text-xs font-bold uppercase tracking-wider glass-card border border-white/20 hover:border-purple-400 text-white hover:bg-purple-600 transition duration-300">
             Contratar 6 Meses
-          </a>
+          </button>
         </div>
 
-        <!-- Plan 4: 12 Meses (VIP Anual) -->
+        <!-- Plan 12 Meses (Anual VIP) -->
         <div class="glass-card rounded-2xl p-7 flex flex-col justify-between border border-white/10 hover:border-emerald-400/40 transition duration-300">
           <div>
             <div class="flex justify-between items-center mb-4">
               <span class="text-xs font-bold tracking-wider uppercase text-emerald-400">Anual VIP</span>
-              <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-emerald-500/20 text-emerald-300">Mejor Precio</span>
+              <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-emerald-500/20 text-emerald-300">Mejor Tarifa</span>
             </div>
-            <h3 class="text-2xl font-black font-display text-white mb-2">12 Meses</h3>
-            <p class="text-xs text-gray-400 mb-6">1 año entero de televisión sin preocuparte por pagos mensuales.</p>
+            <h3 class="text-2xl font-black font-display text-white mb-1">12 Meses</h3>
+            <p class="text-xs text-gray-400 mb-6">1 año completo al costo más conveniente del mercado.</p>
             
             <div class="flex items-baseline gap-1 mb-6">
-              <span class="text-4xl font-black font-display text-white plan-price-12m">$65.00</span>
-              <span class="text-xs text-gray-400 font-medium">/ total</span>
+              <span id="priceVal12m" class="text-3xl sm:text-4xl font-black font-display text-white">$45.000</span>
+              <span id="priceUnit12m" class="text-xs text-gray-400 font-medium">/ total</span>
             </div>
 
             <ul class="space-y-3 text-xs text-gray-300 mb-8">
-              <li class="flex items-center gap-2.5">
+              <li class="flex items-center gap-2">
                 <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
-                <span class="font-semibold text-white">Todo el contenido sin restricciones</span>
+                <span class="font-semibold text-white">Todo el contenido liberado</span>
               </li>
-              <li class="flex items-center gap-2.5">
+              <li class="flex items-center gap-2">
                 <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
-                <span class="screen-text">1 Pantalla simultánea</span>
+                <span class="plan-screen-desc">1 Pantalla simultánea</span>
               </li>
-              <li class="flex items-center gap-2.5">
+              <li class="flex items-center gap-2">
                 <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
-                <span>Canales 24/7 dedicados de series</span>
+                <span>Canales premium deportivos y de cine</span>
               </li>
-              <li class="flex items-center gap-2.5">
+              <li class="flex items-center gap-2">
                 <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
-                <span>Actualizaciones de servidores VIP</span>
+                <span>Actualizaciones de servidores prioritarias</span>
               </li>
-              <li class="flex items-center gap-2.5">
+              <li class="flex items-center gap-2">
                 <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
-                <span class="text-emerald-300 font-bold">2 Meses de regalo equivalentes</span>
+                <span class="text-emerald-300 font-bold">Máximo ahorro garantizado</span>
               </li>
             </ul>
           </div>
 
-          <a href="#" onclick="buyPlan('12 Meses')" class="plan-btn-12m w-full py-3.5 rounded-xl text-center text-xs font-bold uppercase tracking-wider glass-card border-white/20 hover:border-emerald-400 text-white hover:bg-emerald-600 transition duration-300">
-            Contratar Plan Anual
-          </a>
+          <button onclick="orderViaWhatsApp('12 Meses')" class="w-full py-3.5 rounded-xl text-center text-xs font-bold uppercase tracking-wider glass-card border border-white/20 hover:border-emerald-400 text-white hover:bg-emerald-600 transition duration-300">
+            Pedir Plan Anual
+          </button>
         </div>
 
       </div>
 
-      <!-- Payment Methods Badge -->
-      <div class="mt-12 text-center">
-        <p class="text-xs text-gray-400 uppercase tracking-widest font-medium mb-4">Múltiples Medios de Pago Seguros</p>
-        <div class="flex flex-wrap items-center justify-center gap-4 text-gray-400 text-xs">
-          <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 font-semibold text-gray-300">Transferencia Bancaria</span>
-          <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 font-semibold text-gray-300">Mercado Pago</span>
-          <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 font-semibold text-gray-300">PayPal / Tarjetas</span>
-          <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 font-semibold text-gray-300">Cripto (USDT / Binance Pay)</span>
+      <!-- Global and Local Payment Badges -->
+      <div class="mt-14 text-center">
+        <p class="text-xs text-gray-400 uppercase tracking-widest font-semibold mb-4">
+          Medios de pago para Argentina y el Mundo
+        </p>
+        <div class="flex flex-wrap items-center justify-center gap-3 text-xs">
+          <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 font-semibold text-gray-300 flex items-center gap-1.5">
+            <i data-lucide="credit-card" class="w-4 h-4 text-brandCyan"></i> Mercado Pago (Alias / QR)
+          </span>
+          <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 font-semibold text-gray-300 flex items-center gap-1.5">
+            <i data-lucide="landmark" class="w-4 h-4 text-purple-400"></i> Transferencia CBU / CVU
+          </span>
+          <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 font-semibold text-gray-300 flex items-center gap-1.5">
+            <i data-lucide="globe" class="w-4 h-4 text-emerald-400"></i> PayPal (Internacional)
+          </span>
+          <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 font-semibold text-gray-300 flex items-center gap-1.5">
+            <i data-lucide="coins" class="w-4 h-4 text-amber-400"></i> Cripto (USDT / Binance Pay)
+          </span>
+          <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 font-semibold text-gray-300">
+            Tarjetas Visa / Mastercard
+          </span>
         </div>
       </div>
 
@@ -839,10 +869,10 @@
             <span class="p-2.5 rounded-xl bg-brandCyan/20 text-brandCyan">
               <i data-lucide="gauge" class="w-6 h-6"></i>
             </span>
-            <h3 class="text-2xl font-black font-display text-white">¿Cuánta velocidad de internet necesito?</h3>
+            <h3 class="text-2xl font-black font-display text-white">¿Qué velocidad de internet necesitás?</h3>
           </div>
           <p class="text-sm text-gray-300 mb-6">
-            Mueve el deslizador para conocer los megas recomendados según la cantidad de televisores o pantallas que quieras usar en tu hogar.
+            Elegí cuántas pantallas querés ver a la vez en tu hogar para saber los megas recomendados:
           </p>
 
           <div class="space-y-4 mb-6">
@@ -853,16 +883,16 @@
             <input type="range" id="screensSlider" min="1" max="5" value="1" step="1" class="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-cyan-400" oninput="updateSpeedCalc(this.value)">
           </div>
 
-          <div class="p-4 rounded-xl bg-[#090c19]/90 border border-white/10 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div class="p-4 rounded-xl bg-[#080b18] border border-white/10 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div>
-              <div class="text-xs text-gray-400 uppercase tracking-wider">Velocidad mínima sugerida:</div>
+              <div class="text-xs text-gray-400 uppercase tracking-wider">Velocidad mínima recomendada:</div>
               <div id="recommendedSpeed" class="text-2xl font-extrabold text-white">
                 <span class="text-brandCyan">15 a 25 Mbps</span> estables
               </div>
             </div>
             <div class="text-xs text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-3 py-2 rounded-lg flex items-center gap-2">
               <i data-lucide="wifi" class="w-4 h-4 shrink-0"></i>
-              <span>Recomendamos conectar por cable de red o WiFi 5.8 GHz</span>
+              <span>Recomendamos WiFi 5.8 GHz o cable de red ethernet</span>
             </div>
           </div>
         </div>
@@ -871,115 +901,18 @@
     </div>
   </section>
 
-  <section id="testimonios" class="py-24 bg-brandDarker/60 border-t border-white/5">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="text-center max-w-3xl mx-auto mb-16">
-        <span class="text-xs font-bold uppercase tracking-widest text-brandCyan bg-brandCyan/10 px-3 py-1 rounded-full border border-brandCyan/20">
-          Experiencias Reales
-        </span>
-        <h2 class="text-3xl sm:text-5xl font-black font-display text-white mt-4 mb-4">
-          Lo que dicen nuestros clientes
-        </h2>
-        <p class="text-gray-400 text-base">
-          Cientos de familias ya no pagan facturas caras de cable tradicional y disfrutan el mejor streaming.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        
-        <!-- Review 1 -->
-        <div class="glass-card p-6 rounded-2xl border border-white/5 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center gap-1 text-yellow-400 mb-4">
-              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-            </div>
-            <p class="text-sm text-gray-300 leading-relaxed italic mb-6">
-              "Lo que más me importaba era ver los partidos del domingo sin que se congele el servidor. DevStream funciona impecable, la calidad 4K es real y la atención por WhatsApp fue rapidísima."
-            </p>
-          </div>
-          <div class="flex items-center gap-3 border-t border-white/5 pt-4">
-            <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-brandCyan font-bold flex items-center justify-center text-sm">
-              MG
-            </div>
-            <div>
-              <div class="font-bold text-white text-sm">Matías Gómez</div>
-              <div class="text-[11px] text-gray-400">Cliente activo hace 8 meses • Smart TV LG</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Review 2 -->
-        <div class="glass-card p-6 rounded-2xl border border-white/5 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center gap-1 text-yellow-400 mb-4">
-              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-            </div>
-            <p class="text-sm text-gray-300 leading-relaxed italic mb-6">
-              "Me cancelé tres suscripciones de streaming que me costaban un dineral al mes. Aquí tengo las películas que recién salen en el cine y todas las temporadas para mis hijos sin pagar extra."
-            </p>
-          </div>
-          <div class="flex items-center gap-3 border-t border-white/5 pt-4">
-            <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold flex items-center justify-center text-sm">
-              CL
-            </div>
-            <div>
-              <div class="font-bold text-white text-sm">Carla Lozano</div>
-              <div class="text-[11px] text-gray-400">Plan 3 Pantallas • Fire Stick 4K</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Review 3 -->
-        <div class="glass-card p-6 rounded-2xl border border-white/5 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center gap-1 text-yellow-400 mb-4">
-              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-            </div>
-            <p class="text-sm text-gray-300 leading-relaxed italic mb-6">
-              "Tenía dudas de cómo instalarlo en el TV Box chino que tenía en la casa. Me mandaron un video de 1 minuto por WhatsApp y en menos de 5 minutos ya estaba viendo la tele. 10 de 10."
-            </p>
-          </div>
-          <div class="flex items-center gap-3 border-t border-white/5 pt-4">
-            <div class="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-400 font-bold flex items-center justify-center text-sm">
-              ER
-            </div>
-            <div>
-              <div class="font-bold text-white text-sm">Esteban Rivas</div>
-              <div class="text-[11px] text-gray-400">Plan Anual VIP • TV Box Android</div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <section id="faq" class="py-24 relative">
+  <section id="faq" class="py-24 bg-brandDarker/70 border-t border-white/5 relative">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center mb-16">
         <span class="text-xs font-bold uppercase tracking-widest text-brandCyan bg-brandCyan/10 px-3 py-1 rounded-full border border-brandCyan/20">
-          Resuelve tus Dudas
+          Dudas Frecuentes
         </span>
         <h2 class="text-3xl sm:text-5xl font-black font-display text-white mt-4 mb-4">
           Preguntas Frecuentes
         </h2>
         <p class="text-gray-400 text-base">
-          Todo lo que necesitas saber antes de contratar tu acceso a DevStream.
+          Todo lo que necesitás saber antes de activar tu acceso a DevStream TV Digital.
         </p>
       </div>
 
@@ -988,55 +921,55 @@
         <!-- FAQ 1 -->
         <div class="glass-card rounded-2xl border border-white/5 overflow-hidden transition">
           <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left flex items-center justify-between text-white font-bold text-base hover:text-brandCyan transition">
-            <span>¿En qué consiste la Demo Gratis de 2 horas?</span>
+            <span>¿Funciona verdaderamente en cualquier parte del mundo?</span>
             <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300"></i>
           </button>
           <div class="faq-content hidden px-6 pb-5 text-sm text-gray-400 leading-relaxed border-t border-white/5 pt-3">
-            Te proporcionamos un usuario y contraseña temporal totalmente gratis durante 2 horas sin tarjeta de crédito ni compromiso. Así puedes comprobar la calidad de imagen, la velocidad y la estabilidad en tus propios dispositivos antes de pagar.
+            ¡Sí, 100%! El servicio está montado sobre una red internacional de servidores espejo (CDN). Podés usarlo estés en Argentina, Chile, España, Estados Unidos o de vacaciones en cualquier país del mundo. Solo requerís una conexión a internet estable.
           </div>
         </div>
 
         <!-- FAQ 2 -->
         <div class="glass-card rounded-2xl border border-white/5 overflow-hidden transition">
           <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left flex items-center justify-between text-white font-bold text-base hover:text-brandCyan transition">
-            <span>¿Qué aplicaciones necesito para ver la programación?</span>
+            <span>¿En qué consiste la prueba o demo gratuita?</span>
             <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300"></i>
           </button>
           <div class="faq-content hidden px-6 pb-5 text-sm text-gray-400 leading-relaxed border-t border-white/5 pt-3">
-            DevStream es compatible con las mejores aplicaciones del mercado: IPTV Smarters Pro, IBO Player, XCIPTV, TiviMate, SS IPTV o reproductores como VLC. Una vez contratado o pedida tu demo, te indicamos cuál es la más recomendada para tu modelo exacto de tele o celular.
+            Te facilitamos un usuario y contraseña temporal totalmente gratis durante 2 horas para que pruebes los canales deportivos, la calidad de audio, las películas y la velocidad de carga en tu propio televisor o teléfono antes de abonar.
           </div>
         </div>
 
         <!-- FAQ 3 -->
         <div class="glass-card rounded-2xl border border-white/5 overflow-hidden transition">
           <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left flex items-center justify-between text-white font-bold text-base hover:text-brandCyan transition">
-            <span>¿Puedo ver fútbol y eventos deportivos premium?</span>
+            <span>¿Cómo se realiza la instalación en 5 minutos?</span>
             <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300"></i>
           </button>
           <div class="faq-content hidden px-6 pb-5 text-sm text-gray-400 leading-relaxed border-t border-white/5 pt-3">
-            Sí. Incluye todos los canales deportivos de Latinoamérica, España, Estados Unidos e internacionales: Champions League, Copa Libertadores, Sudamericana, Liga Española, Premier League, NBA, Fórmula 1, UFC y eventos Pay-Per-View (PPV) sin costo adicional.
+            Nos escribís a nuestro WhatsApp (+54 9 266 418-4731). Te decimos el nombre exacto de la aplicación a descargar según tu televisor (Samsung, LG, Android TV o Fire Stick), ingresás las claves que te enviamos y ya estás disfrutando de toda la programación.
           </div>
         </div>
 
         <!-- FAQ 4 -->
         <div class="glass-card rounded-2xl border border-white/5 overflow-hidden transition">
           <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left flex items-center justify-between text-white font-bold text-base hover:text-brandCyan transition">
-            <span>¿Puedo conectar más de un dispositivo a la vez?</span>
+            <span>¿Qué medios de pago aceptan si estoy fuera de Argentina?</span>
             <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300"></i>
           </button>
           <div class="faq-content hidden px-6 pb-5 text-sm text-gray-400 leading-relaxed border-t border-white/5 pt-3">
-            El plan estándar permite 1 conexión a la vez. Si deseas que tu familia vea simultáneamente en el televisor de la sala y en otro televisor o celular, disponemos del plan Multi-Pantalla (hasta 3 dispositivos activos a la vez).
+            Si estás en el exterior podés abonar en dólares vía PayPal, Binance Pay / Criptomonedas (USDT), o tarjetas internacionales. Si estás en Argentina, podés pagar en Pesos mediante Mercado Pago (Alias / QR) o transferencia bancaria CBU/CVU.
           </div>
         </div>
 
         <!-- FAQ 5 -->
         <div class="glass-card rounded-2xl border border-white/5 overflow-hidden transition">
           <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left flex items-center justify-between text-white font-bold text-base hover:text-brandCyan transition">
-            <span>¿Cuánto demora la activación una vez hecho el pago?</span>
+            <span>¿Puedo ver los partidos de fútbol y eventos en vivo sin cortes?</span>
             <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300"></i>
           </button>
           <div class="faq-content hidden px-6 pb-5 text-sm text-gray-400 leading-relaxed border-t border-white/5 pt-3">
-            La activación es casi instantánea (entre 3 a 10 minutos). Una vez recibido tu comprobante por WhatsApp, el agente te envía tus credenciales M3U / Xtream Codes y la guía para ingresar directo a tu cuenta.
+            Totalmente. Gracias a la tecnología Anti-Freeze v4.2, el reproductor conmuta de forma automática ante saturaciones para que no te pierdas ningún gol ni jugada decisiva en el minuto 90.
           </div>
         </div>
 
@@ -1050,18 +983,18 @@
       <div class="relative rounded-3xl overflow-hidden bg-gradient-to-r from-brandPurple/30 via-brandCard to-brandCyan/20 p-8 sm:p-14 border border-brandCyan/40 text-center shadow-2xl">
         <div class="max-w-2xl mx-auto">
           <h2 class="text-3xl sm:text-5xl font-black font-display text-white mb-4">
-            ¿Listo para transformar tu forma de ver TV?
+            Pasá a la televisión digital hoy mismo
           </h2>
           <p class="text-gray-300 text-sm sm:text-base mb-8">
-            Solicita hoy mismo tu prueba gratuita de 2 horas y comprueba por qué DevStream es el servicio número #1 en velocidad y estabilidad.
+            Pedí tu demo gratuita sin costo de 2 horas y comprobá por qué miles de usuarios ya le dijeron chau al cable convencional.
           </p>
           <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="https://wa.me/5491100000000?text=Hola%20DevStream!%20Quiero%20mi%20Demo%20Gratis%20ahora%20mismo." target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-xl text-sm font-extrabold uppercase tracking-wider bg-brandCyan text-brandDark shadow-lg shadow-cyan-500/30 hover:bg-white hover:scale-105 active:scale-95 transition flex items-center justify-center gap-2">
+            <a href="https://wa.me/5492664184731?text=Hola%20DevStream!%20Quiero%20solicitar%20mi%20demo%20sin%20costo%20ahora%20mismo." target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-xl text-sm font-extrabold uppercase tracking-wider bg-brandCyan text-brandDark shadow-lg shadow-cyan-500/30 hover:bg-white hover:scale-105 active:scale-95 transition flex items-center justify-center gap-2">
               <i data-lucide="message-circle" class="w-5 h-5 fill-current"></i>
-              Escribir por WhatsApp
+              Escribir al WhatsApp (+54 9 266 418-4731)
             </a>
             <a href="#planes" class="w-full sm:w-auto px-8 py-4 rounded-xl text-sm font-bold text-white glass-card hover:bg-white/10 transition">
-              Elegir un Plan
+              Ver Tarifas
             </a>
           </div>
         </div>
@@ -1073,15 +1006,15 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-white/5">
         
-        <!-- Footer Logo -->
+        <!-- Brand -->
         <div class="flex items-center gap-3">
           <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-brandPurple to-brandCyan p-[1px] flex items-center justify-center">
-            <div class="w-full h-full bg-[#0a0c18] rounded-[7px] flex items-center justify-center">
+            <div class="w-full h-full bg-[#080b18] rounded-[7px] flex items-center justify-center">
               <i data-lucide="rocket" class="w-4 h-4 text-brandCyan"></i>
             </div>
           </div>
           <span class="text-xl font-bold font-display text-white">
-            DEV<span class="text-brandCyan">STREAM</span>
+            DEV<span class="text-brandCyan">STREAM</span> <span class="text-xs text-gray-400 font-normal">TV DIGITAL</span>
           </span>
         </div>
 
@@ -1089,52 +1022,57 @@
         <div class="flex flex-wrap items-center justify-center gap-6 text-xs font-medium text-gray-400">
           <a href="#beneficios" class="hover:text-brandCyan transition">Beneficios</a>
           <a href="#canales" class="hover:text-brandCyan transition">Canales</a>
+          <a href="#dispositivos" class="hover:text-brandCyan transition">Dispositivos</a>
           <a href="#planes" class="hover:text-brandCyan transition">Planes</a>
-          <a href="#faq" class="hover:text-brandCyan transition">FAQ</a>
-          <a href="https://wa.me/5491100000000?text=Hola%20DevStream!%20Necesito%20soporte%20técnico." target="_blank" class="hover:text-brandCyan transition">Soporte 24/7</a>
+          <a href="#faq" class="hover:text-brandCyan transition">Preguntas</a>
+          <a href="https://wa.me/5492664184731?text=Hola%20DevStream!%20Necesito%20soporte%20técnico." target="_blank" class="hover:text-brandCyan transition">Soporte WhatsApp</a>
         </div>
 
-        <!-- Status -->
+        <!-- Online Status -->
         <div class="flex items-center gap-2 text-xs text-emerald-400 font-mono bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">
           <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-          <span>Sistemas Operativos 100% Online</span>
+          <span>Servidores 100% Online</span>
         </div>
 
       </div>
 
       <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-500">
-        <p>© 2026 DevStream. Todos los derechos reservados. Code. Stream. Connect.</p>
+        <p>© 2026 DevStream TV Digital. Todos los derechos reservados.</p>
         <p class="text-center md:text-right">
-          Servicio de transmisión digital para fines de entretenimiento privado. Requiere conexión de banda ancha estable.
+          Servicio internacional de televisión digital y VOD. Base operativa en San Luis, Argentina con alcance global.
         </p>
       </div>
     </div>
   </footer>
 
-  <aside aria-label="Contacto de soporte directo" class="fixed bottom-6 right-6 z-50">
-    <a href="https://wa.me/5491100000000?text=Hola%20DevStream!%20Quiero%20más%20información%20o%20probar%20una%20demo%20gratis." target="_blank" rel="noopener noreferrer" class="group flex items-center gap-3 bg-[#25D366] text-white p-3 sm:px-4 sm:py-3 rounded-full shadow-2xl shadow-green-500/30 hover:scale-105 active:scale-95 transition-transform duration-300">
+  <aside aria-label="Contacto de WhatsApp oficial" class="fixed bottom-6 right-6 z-50">
+    <a id="floatingWppBtn" href="https://wa.me/5492664184731?text=Hola%20DevStream!%20Quiero%20solicitar%20mi%20prueba%20gratis%20o%20consultar%20por%20un%20plan." target="_blank" rel="noopener noreferrer" class="group flex items-center gap-3 bg-[#25D366] text-white p-3 sm:px-4 sm:py-3 rounded-full shadow-2xl shadow-green-500/30 hover:scale-105 active:scale-95 transition-transform duration-300">
       <div class="relative flex items-center justify-center">
-        <!-- Ping wave -->
         <span class="absolute inline-flex h-full w-full rounded-full bg-white opacity-40 animate-ping"></span>
         <svg class="w-6 h-6 fill-current relative" viewBox="0 0 24 24">
           <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.311.045-.698.056-1.11-.082-.264-.087-.599-.219-1.037-.412-1.849-.808-3.048-2.673-3.14-2.798-.093-.125-.751-.998-.751-1.905 0-.906.476-1.353.645-1.537.17-.184.37-.23.493-.23.124 0 .248.002.355.008.114.006.266-.043.415.316.155.373.53 1.293.576 1.387.046.094.077.204.015.328-.061.124-.092.202-.185.311-.092.11-.194.246-.277.33-.092.094-.188.196-.081.381.107.185.478.788 1.025 1.275.706.628 1.302.823 1.487.915.185.093.293.078.401-.047.108-.124.462-.538.585-.724.123-.185.247-.154.416-.093.17.062 1.077.508 1.262.601.185.092.308.138.354.216.046.077.046.45-.098.855zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.662 1.435 5.178L2 22l4.957-1.393A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/>
         </svg>
       </div>
-      <span class="hidden sm:inline font-bold text-xs tracking-wide">¿Dudas? Chatea con Nosotros</span>
+      <div class="hidden sm:flex flex-col text-left">
+        <span class="font-bold text-xs tracking-wide">¿Dudas o Demo Gratis?</span>
+        <span class="text-[10px] text-green-100 font-mono">WhatsApp: 2664184731</span>
+      </div>
     </a>
   </aside>
 
   <script>
-    // Initialize Lucide Icons
+    // Initialize icons
     lucide.createIcons();
 
-    // Mobile Navbar toggle
+    // Official Phone Number
+    const WPP_PHONE = "5492664184731";
+
+    // Mobile Navbar Toggle
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const mobileMenu = document.getElementById('mobileMenu');
     mobileMenuBtn.addEventListener('click', () => {
       mobileMenu.classList.toggle('hidden');
     });
-
     document.querySelectorAll('.mobile-link').forEach(link => {
       link.addEventListener('click', () => {
         mobileMenu.classList.add('hidden');
@@ -1151,9 +1089,8 @@
         mockImg.src = imgUrl;
         activeName.innerText = label;
         mockImg.style.opacity = '1';
-      }, 200);
+      }, 180);
 
-      // styling active button
       event.target.closest('div').querySelectorAll('button').forEach(b => {
         b.className = 'px-3 py-1.5 rounded-lg text-xs font-semibold bg-white/5 hover:bg-white/10 text-gray-300 whitespace-nowrap';
       });
@@ -1163,34 +1100,34 @@
     // Dynamic Categories Data
     const categoriesData = {
       sports: [
-        { title: 'Fútbol Internacional', detail: 'LaLiga, Premier, Champions, Conmebol', icon: 'trophy', tag: 'En Vivo 4K' },
-        { title: 'Motorsport Directo', detail: 'Fórmula 1, MotoGP, IndyCar y WRC', icon: 'gauge', tag: '60 FPS' },
-        { title: 'Combate & MMA', detail: 'UFC Fight Pass, Boxeo Internacional, Bellator', icon: 'zap', tag: 'PPV Incluido' },
-        { title: 'Básquet & Deportes USA', detail: 'NBA Pass, NFL, MLB, NHL con audio latino/inglés', icon: 'award', tag: 'Multi-Audio' }
+        { title: 'Fútbol Nacional & Sudamericano', detail: 'Liga Profesional, Copa Libertadores y Sudamericana', icon: 'trophy', tag: 'En Vivo 4K' },
+        { title: 'Fútbol Europeo', detail: 'UEFA Champions League, Premier League, LaLiga', icon: 'award', tag: '60 FPS' },
+        { title: 'Automovilismo & Tenis', detail: 'Fórmula 1, TN, TC, Moto GP, ATP y Grand Slams', icon: 'gauge', tag: 'Señales VIP' },
+        { title: 'Deportes de Combate', detail: 'UFC Fight Pass, Boxeo Internacional y Bellator PPV', icon: 'zap', tag: 'PPV Incluido' }
       ],
       cinema: [
-        { title: 'Estrenos de Taquilla', detail: 'Títulos 2025 y 2026 actualizados semanalmente', icon: 'film', tag: '4K Dolby' },
-        { title: 'Sagas Legendarias', detail: 'Marvel, DC, Star Wars, Harry Potter completas', icon: 'sparkles', tag: 'Colección' },
-        { title: 'Cine Clásico y de Culto', detail: 'Obras maestras restauradas en alta definición', icon: 'camera', tag: 'HD' },
-        { title: 'Terror y Suspenso', detail: 'Colección de horror, slashers y thrillers', icon: 'flame', tag: 'Subtitulado / Dual' }
+        { title: 'Estrenos de Taquilla', detail: 'Títulos recién salidos de cartelera en Full HD & 4K', icon: 'film', tag: 'Estrenos 2026' },
+        { title: 'Cine en Familia', detail: 'Animaciones de Disney, Pixar, Dreamworks e Illumination', icon: 'sparkles', tag: 'Audio Latino' },
+        { title: 'Acción y Suspenso', detail: 'Sagas taquilleras, thrillers y ciencia ficción', icon: 'flame', tag: 'Calidad 4K' },
+        { title: 'Colecciones Completas', detail: 'Marvel, DC, Star Wars, Harry Potter, Rápidos y Furiosos', icon: 'clapperboard', tag: 'Sagas' }
       ],
       series: [
-        { title: 'Series de Plataformas', detail: 'Contenido original de Netflix, HBO Max, Disney+', icon: 'tv', tag: 'Completas' },
-        { title: 'Canales 24/7 Monotemáticos', detail: 'Canales dedicados a Friends, Los Simpson, etc.', icon: 'clock', tag: '24 Horas' },
-        { title: 'Doramas y Anime', detail: 'Series asiáticas y animes en emisión simultánea', icon: 'heart', tag: 'FHD' },
-        { title: 'Miniseries y Docuseries', detail: 'True crime, biografías y producciones premium', icon: 'file-text', tag: 'Nuevo' }
+        { title: 'Series de Plataformas', detail: 'Producciones originales de Netflix, HBO Max, Disney+, Prime', icon: 'tv', tag: 'Completas' },
+        { title: 'Canales 24/7 de Series', detail: 'Señales dedicadas día y noche a tus series favoritas', icon: 'clock', tag: '24 Horas' },
+        { title: 'Doramas y Anime', detail: 'Lo más visto de Japón y Corea con subtítulos o doblaje', icon: 'heart', tag: 'HD' },
+        { title: 'Miniseries Documentales', detail: 'True crime, deportes, naturaleza y biografías', icon: 'file-text', tag: 'Actualizado' }
       ],
       kids: [
-        { title: 'Caricaturas Clásicas', detail: 'Cartoon Network, Disney Channel, Nickelodeon', icon: 'smile', tag: 'Seguro' },
-        { title: 'Películas Infantiles', detail: 'Pixar, DreamWorks, Illumination completas', icon: 'star', tag: 'Español Latino' },
-        { title: 'Educativo y Preescolar', detail: 'BabyTV, Discovery Kids, Nat Geo Kids', icon: 'book-open', tag: 'Para Niños' },
-        { title: 'Animé Juvenil', detail: 'Dragon Ball, Pokémon, Naruto y lanzamientos', icon: 'sparkle', tag: 'Dual Audio' }
+        { title: 'Dibujos Animados', detail: 'Nickelodeon, Cartoon Network, Disney Channel, Boomerang', icon: 'smile', tag: 'Familiar' },
+        { title: 'Preescolar y Educativo', detail: 'BabyTV, Discovery Kids, Nat Geo Kids', icon: 'book-open', tag: 'Seguro' },
+        { title: 'Anime Clásico & Shonen', detail: 'Dragon Ball, Pokémon, Naruto, One Piece en orden', icon: 'sparkle', tag: 'Dual' },
+        { title: 'Películas Animadas', detail: 'Clásicos y lanzamientos para disfrutar en casa', icon: 'star', tag: 'En Español' }
       ],
       news: [
-        { title: 'Noticieros Internacionales', detail: 'CNN, BBC, TVE, DW, RT, Fox News', icon: 'globe', tag: 'Mundo' },
-        { title: 'Canales Locales por País', detail: 'Argentina, Chile, México, Colombia, Perú, USA', icon: 'map-pin', tag: 'Nacionales' },
-        { title: 'Documentales de Naturaleza', detail: 'National Geographic, Discovery Channel, History', icon: 'compass', tag: '1080p' },
-        { title: 'Música y Festivales', detail: 'MTV, canales de conciertos y festivales en vivo', icon: 'music', tag: 'Audio HD' }
+        { title: 'Noticieros Nacionales', detail: 'TN, C5N, LN+, Crónica, A24, Telefe, El Trece', icon: 'map-pin', tag: 'Argentina' },
+        { title: 'Noticieros Internacionales', detail: 'CNN, BBC, TVE, Deutsche Welle, Fox News, RT', icon: 'globe', tag: 'Mundo' },
+        { title: 'Naturaleza y Ciencia', detail: 'National Geographic, Discovery Channel, History Channel', icon: 'compass', tag: '1080p' },
+        { title: 'Canales Musicales', detail: 'MTV, canales de recitales, música urbana y festivales', icon: 'music', tag: 'Sonido HD' }
       ]
     };
 
@@ -1221,46 +1158,105 @@
       btn.className = 'category-btn active px-4 py-2 rounded-xl text-xs font-bold bg-brandCyan text-brandDark transition flex items-center gap-2';
       renderCategory(catKey);
     }
-
-    // Initial load for category grid
     renderCategory('sports');
 
-    // Screens Multi-price Toggle
-    let currentScreens = 1;
-    const prices = {
-      1: { '1m': '$8.50', '3m': '$22.00', '6m': '$38.00', '12m': '$65.00' },
-      3: { '1m': '$14.00', '3m': '$36.00', '6m': '$62.00', '12m': '$99.00' }
+    // MULTI-CURRENCY & SCREENS PRICING SYSTEM
+    let activeCurrency = 'ARS'; // 'ARS' or 'USD'
+    let activeScreens = 1;      // 1 or 3
+
+    const priceMatrix = {
+      ARS: {
+        symbol: '$',
+        heroTag: 'Desde $5.000 ARS/mes',
+        1: { '1m': '$5.000', '3m': '$13.500', '6m': '$24.000', '12m': '$45.000' },
+        3: { '1m': '$9.500', '3m': '$25.500', '6m': '$46.000', '12m': '$85.000' }
+      },
+      USD: {
+        symbol: '$',
+        heroTag: 'Desde $5 USD/mes',
+        1: { '1m': '$5.00', '3m': '$13.50', '6m': '$24.00', '12m': '$45.00' },
+        3: { '1m': '$9.50', '3m': '$25.50', '6m': '$46.00', '12m': '$85.00' }
+      }
     };
 
-    function setScreens(qty) {
-      currentScreens = qty;
-      const b1 = document.getElementById('btnScreen1');
-      const b2 = document.getElementById('btnScreen2');
+    function updatePricingUI() {
+      const currentData = priceMatrix[activeCurrency];
+      
+      // Update Hero Tag
+      document.getElementById('heroPriceTag').innerText = currentData.heroTag;
 
-      if (qty === 1) {
-        b1.className = "px-5 py-2 rounded-xl text-xs font-bold bg-brandCyan text-brandDark transition shadow-md";
-        b2.className = "px-5 py-2 rounded-xl text-xs font-bold text-gray-400 hover:text-white transition";
-      } else {
-        b2.className = "px-5 py-2 rounded-xl text-xs font-bold bg-brandCyan text-brandDark transition shadow-md";
-        b1.className = "px-5 py-2 rounded-xl text-xs font-bold text-gray-400 hover:text-white transition";
+      // Update Card Prices
+      document.getElementById('priceVal1m').innerText = currentData[activeScreens]['1m'];
+      document.getElementById('priceVal3m').innerText = currentData[activeScreens]['3m'];
+      document.getElementById('priceVal6m').innerText = currentData[activeScreens]['6m'];
+      document.getElementById('priceVal12m').innerText = currentData[activeScreens]['12m'];
+
+      const currencySuffix = activeCurrency === 'ARS' ? 'ARS' : 'USD';
+      document.getElementById('priceUnit1m').innerText = `/ mes ${currencySuffix}`;
+      document.getElementById('priceUnit3m').innerText = `/ total ${currencySuffix}`;
+      document.getElementById('priceUnit6m').innerText = `/ total ${currencySuffix}`;
+      document.getElementById('priceUnit12m').innerText = `/ total ${currencySuffix}`;
+
+      // Update Screen descriptions in cards
+      document.querySelectorAll('.plan-screen-desc').forEach(el => {
+        el.innerText = activeScreens === 1 ? '1 Pantalla simultánea' : '3 Pantallas simultáneas a la vez';
+      });
+
+      // Update button visual states for currency
+      const isARS = activeCurrency === 'ARS';
+      const activeBtnClass = "px-5 py-2 rounded-xl text-xs font-extrabold bg-brandCyan text-brandDark transition shadow-md";
+      const inactiveBtnClass = "px-5 py-2 rounded-xl text-xs font-extrabold text-gray-400 hover:text-white transition";
+
+      document.getElementById('currToggleARS').className = isARS ? activeBtnClass : inactiveBtnClass;
+      document.getElementById('currToggleUSD').className = !isARS ? activeBtnClass : inactiveBtnClass;
+
+      // Header pills
+      const navARS = document.getElementById('currBtnARS_nav');
+      const navUSD = document.getElementById('currBtnUSD_nav');
+      if (navARS && navUSD) {
+        navARS.className = isARS ? "px-2.5 py-1 rounded-full bg-brandCyan text-brandDark transition" : "px-2.5 py-1 rounded-full text-gray-400 hover:text-white transition";
+        navUSD.className = !isARS ? "px-2.5 py-1 rounded-full bg-brandCyan text-brandDark transition" : "px-2.5 py-1 rounded-full text-gray-400 hover:text-white transition";
       }
 
-      document.querySelector('.plan-price-1m').innerText = prices[qty]['1m'];
-      document.querySelector('.plan-price-3m').innerText = prices[qty]['3m'];
-      document.querySelector('.plan-price-6m').innerText = prices[qty]['6m'];
-      document.querySelector('.plan-price-12m').innerText = prices[qty]['12m'];
-
-      document.querySelectorAll('.screen-text').forEach(el => {
-        el.innerText = qty === 1 ? '1 Pantalla simultánea' : '3 Pantallas simultáneas a la vez';
-      });
+      const mobARS = document.getElementById('currBtnARS_mob');
+      const mobUSD = document.getElementById('currBtnUSD_mob');
+      if (mobARS && mobUSD) {
+        mobARS.className = isARS ? "px-3 py-1 rounded-full bg-brandCyan text-brandDark transition" : "px-3 py-1 rounded-full text-gray-400 hover:text-white transition";
+        mobUSD.className = !isARS ? "px-3 py-1 rounded-full bg-brandCyan text-brandDark transition" : "px-3 py-1 rounded-full text-gray-400 hover:text-white transition";
+      }
     }
 
-    function buyPlan(planName) {
-      const text = `Hola DevStream! Deseo contratar el Plan ${planName} con ${currentScreens} pantalla(s). ¿Cuáles son los métodos de pago disponibles?`;
-      window.open(`https://wa.me/5491100000000?text=${encodeURIComponent(text)}`, '_blank');
+    function changeCurrency(curr) {
+      activeCurrency = curr;
+      updatePricingUI();
     }
 
-    // Bandwidth Calculator
+    function setScreenOption(qty) {
+      activeScreens = qty;
+      const b1 = document.getElementById('screenBtn1');
+      const b3 = document.getElementById('screenBtn3');
+
+      if (qty === 1) {
+        b1.className = "px-4 py-1.5 rounded-lg font-bold bg-brandCyan/20 text-brandCyan border border-brandCyan/30";
+        b3.className = "px-4 py-1.5 rounded-lg font-bold text-gray-400 hover:text-white";
+      } else {
+        b3.className = "px-4 py-1.5 rounded-lg font-bold bg-brandCyan/20 text-brandCyan border border-brandCyan/30";
+        b1.className = "px-4 py-1.5 rounded-lg font-bold text-gray-400 hover:text-white";
+      }
+      updatePricingUI();
+    }
+
+    // Direct WhatsApp Purchase Action
+    function orderViaWhatsApp(planPeriod) {
+      const priceText = priceMatrix[activeCurrency][activeScreens][planPeriod === '1 Mes' ? '1m' : planPeriod === '3 Meses' ? '3m' : planPeriod === '6 Meses' ? '6m' : '12m'];
+      const currencyLabel = activeCurrency === 'ARS' ? 'Pesos Argentinos' : 'Dólares USD';
+      
+      const message = `Hola DevStream TV Digital! Quiero contratar el Plan de ${planPeriod} para ${activeScreens} pantalla(s) (${priceText} ${currencyLabel}). ¿Cuáles son los datos de pago para activar ahora?`;
+      const url = `https://wa.me/${WPP_PHONE}?text=${encodeURIComponent(message)}`;
+      window.open(url, '_blank');
+    }
+
+    // Internet Speed Calculator
     function updateSpeedCalc(val) {
       const label = document.getElementById('screenCountLabel');
       const speed = document.getElementById('recommendedSpeed');
@@ -1276,13 +1272,12 @@
       speed.innerHTML = speeds[val];
     }
 
-    // FAQ Accordion logic
-    function toggleFaq(button) {
-      const content = button.nextElementSibling;
-      const icon = button.querySelector('i');
+    // FAQ Accordion
+    function toggleFaq(btn) {
+      const content = btn.nextElementSibling;
+      const icon = btn.querySelector('i');
       const isExpanded = !content.classList.contains('hidden');
 
-      // Close all others
       document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
       document.querySelectorAll('#faqAccordion button i').forEach(ic => ic.classList.remove('rotate-180'));
 
@@ -1291,6 +1286,9 @@
         icon.classList.add('rotate-180');
       }
     }
+
+    // Initial setup call
+    updatePricingUI();
   </script>
 
 </body>
